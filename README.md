@@ -31,3 +31,10 @@
   ![Statement of accomplishment](Screenshot_20230121_090154.png)
   
   [Back to Table of Contents](#table-of-contents)
+
+# <a id="the-project"></a>1. The Project
+There were two projects we worked on. The first project is Foodboost, and the second project is Vision (IV-Infra). I will cover both of them seperately here.
+
+##  <a id="the-project-foodboost"></a>Foodboost
+The goal of Project Foodboost was to develop a recommendation system that helps users adopt healthier eating habits. Since the concept of "healthy" can be subjective, our approach was to gradually introduce more nutritious options over an extended period of time, recognizing that eating well is a long-term lifestyle change, not a temporary trend.
+
