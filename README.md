@@ -38,3 +38,11 @@ There were two projects we worked on. The first project is Foodboost, and the se
 ##  <a id="the-project-foodboost"></a>Foodboost
 The goal of Project Foodboost was to develop a recommendation system that helps users adopt healthier eating habits. Since the concept of "healthy" can be subjective, our approach was to gradually introduce more nutritious options over an extended period of time, recognizing that eating well is a long-term lifestyle change, not a temporary trend.
 
+For this goal, we set the following research questions:
+1. How can we predict a healthier diet for someone based on their previous recipes?
+2. How can we define "healthier"?
+3. How can we collect recipes that meet the calorie requirements of a single person for a day?
+
+### Future Work
+The main setback I felt we had was the lack of real user data. Lacking user data is important for a machine learning model that aims to recommend healthier food options because the model relies on this data to learn about the user's preferences, dietary restrictions, and current eating habits. Without this information, the model would not be able to make personalized or accurate recommendations. Additionally, the model would not be able to track the user's progress and adjust its recommendations accordingly. Without data, the model would not be able to learn from user interactions and feedback, which is crucial for improving the model's performance over time.
+
