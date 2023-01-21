@@ -65,3 +65,44 @@ The study should measure the proportion of food choices made by the participants
 It's also important to have a measure of participant's satisfaction with the system, and their perception of the Nutri-Score system in terms of its usefulness and ease of use.
 
 The results of such a study would provide an indication of the effectiveness of the Nutri-Score system in guiding users towards healthier food choices within the Foodboost recommendation system.
+
+### Planning
+Initially, we had intended to utilize Trello as a means of keeping each other informed about progress made on the project. However, as we progressed, we found ourselves neglecting Trello in favor of prioritizing the completion of tasks.
+
+## <a id="the-project-vision"></a>Vision
+In this research project, the context was to develop a data science solution for checking the status of road signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of road signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. 
+
+For this goal, we set the following research questions:
+1. "How can road signs be recognized and mapped using a series of photos?" 
+2. To what extent has research been done into recognizing traffic signs by means of Machine Learning and/or Neural Networks?
+3. What drives traffic sign mapping?
+4. Which data from the NDW will be integrated into the Neural Network?
+5. How accurately can a traffic sign be recognized using LiDAR data?
+
+### Future Work
+
+Based on the research conducted, there are several steps that can be taken to improve the model. One of the most beneficial steps is to increase the amount of data used to train the model. This can be achieved by having IV-infra collect data from various locations and in different weather conditions.
+
+In the future, the model can also be useful for municipalities in maintaining traffic signs. If the model does not detect a sign that is supposed to be present according to NDW, the municipality can check if the sign is damaged or stolen. Conversely, if the model detects a sign that is not in the NDW dataset, it is likely a temporary sign and the municipality can determine the duration of its placement and if it needs to be removed.
+
+Additionally, the model can be utilized to trigger actions based on the recognition of specific traffic signs. For example, the model can be used to prompt self-driving cars to reduce speed at speed signs, speed cameras, and dangerous intersections. This way the model can contribute to the safety of self-driving cars.
+
+### Conclusions
+
+#### 1. "How can road signs be recognized and mapped using a series of photos?" 
+
+To address this question, we used YOLOv5 as the object detection model and trigonometric calculations to map the detected road signs. We also used a dataset provided by IV-Infra and compared the results to the road sign records held by NDW. Overall, the context and research question were clearly defined and were reasonable given the need for an efficient and accurate solution for monitoring road signs.
+
+#### 2. To what extent has research been done into recognizing traffic signs by means of Machine Learning and/or Neural Networks?
+
+
+
+#### 3. What drives traffic sign mapping?
+
+
+
+#### 4. Which data from the NDW will be integrated into the Neural Network?
+
+
+
+#### 5. How accurately can a traffic sign be recognized using LiDAR data?
