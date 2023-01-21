@@ -28,6 +28,6 @@
 
 - 5 / 12 / 2022 Datacamp progress
 
-  ![Statement of accomplishment](xx)
+  ![Statement of accomplishment](Screenshot_20230121_090154.png)
   
   [Back to Table of Contents](#table-of-contents)
