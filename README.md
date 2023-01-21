@@ -26,7 +26,7 @@
 # <a id="obligatory-criteria"></a>Obligatory Criteria
 ## <a id="datacamp-assignments"></a>Datacamp assignments
 
-- 5 / 12 / 2022 Datacamp progress
+- 21 / 01 / 2023 Datacamp progress
 
   ![Statement of accomplishment](Screenshot_20230121_090154.png)
   
