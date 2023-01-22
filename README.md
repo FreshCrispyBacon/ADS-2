@@ -165,11 +165,27 @@ Through this project, I was able to apply my knowledge and experience in healthy
 ## <a id="#domain-knowledge-literature-foodboost"></a>Literature
 During this project, which spanned over the first six weeks of the minor kick-off. My main source of knowledge origins from the DataCamp courses. Furthermore I educated myself on the types of recommender systems and how to apply those techniques for promoting a long-term lifestyle change, in addition to understanding the Nutri-Score and Nutri-Label algorithm.
 
-* [Update of the Ntrui-Score Algorithm](https://open.overheid.nl/repository/ronl-34c6383f5747298a4d0a93c2ac884f150557f51e/1/pdf/2022-main-algorithm-report-update.pdf)
+* [Update of the Nutri-Score Algorithm](https://open.overheid.nl/repository/ronl-34c6383f5747298a4d0a93c2ac884f150557f51e/1/pdf/2022-main-algorithm-report-update.pdf)
 * [Introduction to Recommender System](https://towardsdatascience.com/intro-to-recommender-system-collaborative-filtering-64a238194a26)
 * [A Complete Guide To Recommender Systems](https://towardsdatascience.com/a-complete-guide-to-recommender-system-tutorial-with-sklearn-surprise-keras-recommender-5e52e8ceace1)
 
 ## <a id="#domain-knowledge-terminology-foodboost"></a>Terminology
+<details>
+<summary>
+In the project there are some terms and jargon that might need to be explained:
+</summary>
+
+- Nutri-Score
+  
+  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.
+  
+- Nutri-Label
+  
+  Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per 100g or per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.
+
+</details>
+
+[Back to Table of Contents](#table-of-contents)
 
 # <a id="domain-vision"></a>Vision
 
