@@ -111,15 +111,15 @@ Overall, the field of TSR using Machine Learning and Neural Networks is a very a
 
 The research question can be approached by using a combination of image processing techniques, machine learning, and data visualization tools.
 
-One way to accomplish traffic sign mapping is to first use image processing techniques such as YOLOv5 to detect and identify traffic signs in images captured by cameras mounted on vehicles or drones. The output of YOLOv5 detection will give the coordinates of the traffic signs in the images.
+One way to accomplish traffic sign mapping is to first use image processing techniques such as YOLOv5 to detect and identify traffic signs in images captured by cameras mounted on a vehicle. The output of YOLOv5 detection will give type of detected traffic signs in the images.
+
+Then, trigononmetric calculations are performed on a pair of YOLOv5 output images to retrieve new coordinates signifying the detected road sign's location.
 
 Next, these coordinates can be verified against the National Data Warehouse (NDW) database, which contains information on traffic signs in the Netherlands, including their location and attributes. By cross-referencing the coordinates with the NDW database, it can be verified that the traffic signs have been placed in the correct location and that they conform to national and international standards.
 
 Once the coordinates have been verified, they can be plotted on a map using a Python library such as Plotly Express. This allows for the visualization of the locations of the traffic signs and can be used to identify patterns and trends in the data.
 
 In this way, traffic sign mapping is accomplished by using image processing techniques to detect and identify traffic signs, and then using machine learning and data visualization tools to verify the location of the traffic signs and map them on a map.
-
-In summary, traffic sign mapping is accomplished by using YOLOv5 to detect and identify traffic signs in images, then verifying the coordinates with the NDW database and mapping them using Plotly.Express in python. 
 
 #### 4. Which data from the NDW will be integrated into the Neural Network?
 
