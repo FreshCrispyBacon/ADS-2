@@ -207,14 +207,14 @@ I was primarily focused on researching and implementing the YOLOv5 object detect
 Lastly, my colleague Bram and I wrote a python script from scratch to bring all the components of the project together. This script utilized the YOLOv5 object detection model and trigonometric calculations to effectively map the road signs detected by the model. This script was crucial to achieving the final goal of the project, which was to accurately map and check the status of road signs. The process of writing this script required a deep understanding of the YOLOv5 model, trigonometry, and programming skills. It was a challenging but rewarding experience to work on this script and bring the project to fruition
 
 ## <a id="#domain-knowledge-literature-vision"></a>Literature
+In this second project, I leveraged the knowledge and skills I had gained from my previous experiences, particularly in the field of Python programming. I had completed several courses on DataCamp and was well-versed in the language. This allowed me to focus more on understanding the inner workings of the YOLOv5 object detection model and researching ways to optimize its deployment for our specific project. I spent a significant amount of time studying the model and experimenting with different configurations to ensure that it was properly tailored to our needs. Finally, I implemented the model and integrated it into the project. The knowledge and experience I had gained from my prior training in Python programming enabled me to approach this project with confidence and make meaningful contributions to the project's success.
 
-
-[Traffic Sign Recognition Application Using Yolov5 Architecture](https://ieeexplore.ieee.org/abstract/document/9537355)
-[Improved YOLOv5 network for real-time multi-scale traffic sign detection](https://link.springer.com/article/10.1007/s00521-022-08077-5)
-[A Novel Neural Network Model for Traffic Sign Detection and Recognition under Extreme Conditions](https://www.hindawi.com/journals/js/2021/9984787/)
-[Detecting objects with YOLOv5, OpenCV, Python and C++](https://medium.com/mlearning-ai/detecting-objects-with-yolov5-opencv-python-and-c-c7cf13d1483c)
-[Training YOLOv5 custom dataset](https://medium.com/mlearning-ai/training-yolov5-custom-dataset-with-ease-e4f6272148ad)
-[What is YOLO algorithm? | Deep Learning (Tensorflow, Keras & Python)](https://www.youtube.com/watch?v=ag3DLKsl2vk)
+* [Traffic Sign Recognition Application Using Yolov5 Architecture](https://ieeexplore.ieee.org/abstract/document/9537355)
+* [Improved YOLOv5 network for real-time multi-scale traffic sign detection](https://link.springer.com/article/10.1007/s00521-022-08077-5)
+* [A Novel Neural Network Model for Traffic Sign Detection and Recognition under Extreme Conditions](https://www.hindawi.com/journals/js/2021/9984787/)
+* [Detecting objects with YOLOv5, OpenCV, Python and C++](https://medium.com/mlearning-ai/detecting-objects-with-yolov5-opencv-python-and-c-c7cf13d1483c)
+* [Training YOLOv5 custom dataset](https://medium.com/mlearning-ai/training-yolov5-custom-dataset-with-ease-e4f6272148ad)
+* [What is YOLO algorithm? | Deep Learning (Tensorflow, Keras & Python)](https://www.youtube.com/watch?v=ag3DLKsl2vk)
 
 ## <a id="#domain-knowledge-terminology-vision"></a>Terminology
 
