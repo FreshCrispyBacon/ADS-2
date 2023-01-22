@@ -163,7 +163,7 @@ The goal of Project Foodboost was to develop a recommendation system that helps 
 Through this project, I was able to apply my knowledge and experience in healthy eating to try and create a tool that can assist others in making positive changes to their diets. I am excited to see the impact that this project will have in the future on helping individuals improve their health and well-being through healthier food choices.
 
 ## <a id="#domain-knowledge-literature-foodboost"></a>Literature
-During this project, which spanned over the first six weeks of the minor kick-off. My main source of knowledge origins from the DataCamp courses.
+During this project, which spanned over the first six weeks of the minor kick-off. My main source of knowledge origins from the DataCamp courses. Furthermore I 
 ## <a id="#domain-knowledge-terminology-foodboost"></a>Terminology
 
 # <a id="domain-vision"></a>Vision
