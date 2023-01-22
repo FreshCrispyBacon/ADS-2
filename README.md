@@ -168,7 +168,7 @@ During this project, which spanned over the first six weeks of the minor kick-of
 ## <a id="#domain-knowledge-terminology-foodboost"></a>Terminology
 <details>
 <summary>
-In the project there are some terms and jargon that might need to be explained:
+Below are some terms and jargon that are explained in further detail
 </summary>
 
 - Nutri-Score
@@ -178,12 +178,33 @@ In the project there are some terms and jargon that might need to be explained:
 - Nutri-Label
   
   Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per 100g or per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.
+  
+- Recommender System
+  
+  A recommender system is a type of algorithm that is used to suggest items to users based on their preferences and behavior. These systems are commonly used in online platforms such as e-commerce websites, streaming services, and social media. They help users discover new products, movies, music, articles and more that they may be interested in.
+
+  There are several types of recommender systems, the most common are:
+
+  Content-based filtering: This type of system uses the characteristics of the items a user has previously interacted with to suggest similar items. For example, a music streaming service may recommend songs that are similar to ones a user has previously listened to.
+
+  Collaborative filtering: This type of system uses the behavior of other users to make recommendations. For example, if many users who have similar tastes to a user have liked a particular recipe, the system may recommend that recipe to the user.
+
+  Hybrid systems: This type of systems combine the previous two types of recommendation, using both the content of the items and the behavior of other users to make recommendations.
+
+  Recommender systems can use various techniques to make recommendations such as matrix factorization, cosine similarity, and neural networks. These systems are constantly learning and adapting to the user's behavior, making their recommendations more accurate over time.
 
 </details>
 
 [Back to Table of Contents](#table-of-contents)
 
 # <a id="domain-vision"></a>Vision
+In this project, entitled "Vision", I delved into the field of computer vision and object detection. Having taken a course on computer vision the prior year, I was already familiar with the principles of this area of study. However, I had always been particularly interested in the application of object detection, and this project provided me with the opportunity to work with it firsthand.
+
+The context of this research project was to develop a data science solution for checking the status of road signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of road signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. The research question being addressed was, "How can road signs be recognized and mapped using a series of photos?"
+
+I was primarily focused on researching and implementing the YOLOv5 object detection model. This involved deep diving into the inner workings of the model, as well as experimenting with various configurations to ensure it was optimally suited for our project. I also spent a significant amount of time researching and implementing various preprocessing techniques for the dataset before it was fed into the model. This allowed me to ensure the best possible results and accuracy of the model. 
+
+Lastly, my colleague Bram and I wrote a python script from scratch to bring all the components of the project together. This script utilized the YOLOv5 object detection model and trigonometric calculations to effectively map the road signs detected by the model. This script was crucial to achieving the final goal of the project, which was to accurately map and check the status of road signs. The process of writing this script required a deep understanding of the YOLOv5 model, trigonometry, and programming skills. It was a challenging but rewarding experience to work on this script and bring the project to fruition
 
 ## <a id="#domain-knowledge-literature-vision"></a>Literature
 ## <a id="#domain-knowledge-terminology-vision"></a>Terminology
