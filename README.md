@@ -12,8 +12,12 @@
   - [Foodboost (Decision Tree Classifier)](#predictive-models-foodboost)
   - [Vision (YOLOv5)](#predictive-models-vision)
 - [3. Domain Knowledge](#domain-knowledge)
-  - [Literature](#domain-knowledge-literature)
-  - [Terminology](#domain-knowledge-terminology)
+  - [Foodboost](#domain-foodboost) 
+  - [Literature](#domain-knowledge-literature-foodboost)
+  - [Terminology](#domain-knowledge-terminology-foodboost)
+  - [Vision](#domain-vision) 
+  - [Literature](#domain-knowledge-literature-vision)
+  - [Terminology](#domain-knowledge-terminology-vision)
 - [4. Data Preprocessing](#data-preprocessing)
   - [Foodboost](#data-preprocessing-foodboost)
   - [Vision](#data-preprocessing-vision)
@@ -151,9 +155,17 @@ content here
 
 [Back to Table of Contents](#table-of-contents)
 # <a id="domain-knowledge"></a>3. Domain Knowledge
+# <a id="domain-foodboost"></a>Foodboost
 The field of healthy food and nutrition is a complex and ever-evolving one, making it essential for the success of Project Foodboost to have a deep understanding of how healthy diets are constructed. As someone who has been following a healthy diet for the past 9 years, both for personal fitness goals and due to dietary needs stemming from personal health issues, I was well-suited to take on this project.
 
 The goal of Project Foodboost was to develop a recommendation system that helps users adopt healthier eating habits. Given that the concept of "healthy" can be subjective, our approach was to gradually introduce more nutritious options over an extended period of time. By recognizing that eating well is a long-term lifestyle change, and not a temporary trend, we were able to develop a system that takes into account the unique needs and preferences of each individual user.
 
 Through this project, I was able to apply my knowledge and experience in healthy eating to try and create a tool that can assist others in making positive changes to their diets. I am excited to see the impact that this project will have in the future on helping individuals improve their health and well-being through healthier food choices.
 
+## <a id="#domain-knowledge-literature-foodboost"></a>Literature
+## <a id="#domain-knowledge-terminology-foodboost"></a>Terminology
+
+# <a id="domain-vision"></a>Vision
+
+## <a id="#domain-knowledge-literature-vision"></a>Literature
+## <a id="#domain-knowledge-terminology-vision"></a>Terminology
