@@ -223,3 +223,52 @@ In this second project, I leveraged the knowledge and skills I had gained from m
 [Back to Table of Contents](#table-of-contents)
 # <a id="data-preprocessing"></a>4. Data Preprocessing
 The "Data Preprocessing" section of this portfolio showcases my skills and experience in preparing and cleaning data for analysis. This includes tasks such as data cleaning, data transformation, feature selection, data annotation, data normalization and data visualization. 
+
+## <a id="data-preprocessing-foodboost"></a>Project Foodboost
+
+### Dataset *Allerhande
+
+### Dataset *Food.com
+
+## <a id="data-preprocessing-vision"></a>Project Vision
+
+### Dataset *IV-Infra
+
+#### Images, LiDAR and Coordinates
+
+#### Data cleaning
+
+#### The Annotation process
+
+#### Data Augmantation
+
+### Dataset *NDW
+
+
+[Back to Table of Contents](#table-of-contents)
+# 5. <a id="communication"></a>Communication
+
+## Presentations
+
+During this minor I have presented x presentations.
+
+Foodboost
+  - 
+  - 
+
+Vision
+  -
+  -
+
+## Paper
+
+For our paper I wrote ...
+
+
+
+# <a id="codesnippets"></a>Code snippets for contributions 
+## FoodBoost
+
+```py
+python code here
+```
