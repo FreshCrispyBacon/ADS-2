@@ -10,7 +10,7 @@
   - [Vision](#the-project-vision)
 - [2. Predictive Models](#predictive-models)
   - [Foodboost (Decision Tree Classifier)](#predictive-models-foodboost)
-  - [Vision (YOLOv5)](#predictive-models-containers)
+  - [Vision (YOLOv5)](#predictive-models-vision)
 - [3. Domain Knowledge](#domain-knowledge)
   - [Literature](#domain-knowledge-literature)
   - [Terminology](#domain-knowledge-terminology)
@@ -139,3 +139,15 @@ In this project, we initially planned to use Trello as our task management tool 
 I have created multiple predictive models, which I will present and discuss separately for each project.
 ## <a id="predictive-models-foodboost"></a>Project Foodboost
 
+Project foodboost was mainly based around basic machine learning models.
+
+content here
+
+## <a id="predictive-models-vision"></a>Project Vision
+
+Project vision ...
+
+content here
+
+[Back to Table of Contents](#table-of-contents)
+# <a id="domain-knowledge"></a>3. Domain Knowledge
