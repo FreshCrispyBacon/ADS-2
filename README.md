@@ -226,23 +226,49 @@ The "Data Preprocessing" section of this portfolio showcases my skills and exper
 
 ## <a id="data-preprocessing-foodboost"></a>Project Foodboost
 
+intro here
+
 ### Dataset *Allerhande
 
+info
+text
+
 ### Dataset *Food.com
+
+info
+text
 
 ## <a id="data-preprocessing-vision"></a>Project Vision
 
 ### Dataset *IV-Infra
 
+info
+text
+
 #### Images, LiDAR and Coordinates
+
+info
+text
 
 #### Data cleaning
 
+info
+text
+
 #### The Annotation process
+
+info
+text
 
 #### Data Augmantation
 
+info
+text
+
 ### Dataset *NDW
+
+info
+text
 
 
 [Back to Table of Contents](#table-of-contents)
