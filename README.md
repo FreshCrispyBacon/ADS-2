@@ -28,7 +28,6 @@
 
 - 21 / 01 / 2023 Datacamp progress
 
-  ![Statement of accomplishment](Screenshot_20230121_090154.png)
   <details><summary>Datacamp progress</summary><img src="Screenshot_20230121_090154.png"></details>
   
   [Back to Table of Contents](#table-of-contents)
