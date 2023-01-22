@@ -95,7 +95,17 @@ To address this question, we used YOLOv5 as the object detection model and trigo
 
 #### 2. To what extent has research been done into recognizing traffic signs by means of Machine Learning and/or Neural Networks?
 
+There has been a significant amount of research done in the field of recognizing traffic signs using Machine Learning and Neural Networks. The task of traffic sign recognition (TSR) is a well-established computer vision task that has been studied extensively in the literature.
 
+Many studies have been conducted using various Machine Learning and Neural Network algorithms such as Support Vector Machines (SVMs), Random Forest, k-Nearest Neighbors (k-NN), Convolutional Neural Networks (CNNs), and Recurrent Neural Networks (RNNs) to name a few.
+
+Convolutional Neural Networks (CNNs) have been particularly effective in TSR, especially deep CNNs. These methods have shown to achieve high accuracy rates on various benchmark datasets such as the German Traffic Sign Recognition Benchmark (GTSRB).
+
+Additionally, researchers have been also working on improving the robustness of TSR systems by incorporating techniques such as data augmentation, transfer learning, and Adversarial machine learning to handle different variations in traffic sign appearances, such as different lighting conditions, weather, and camera perspectives.
+
+In recent years, researchers have also been working on developing real-time TSR systems that can be deployed on vehicles and embedded systems, to enhance the safety of autonomous vehicles.
+
+Overall, the field of TSR using Machine Learning and Neural Networks is a very active area of research with a great deal of progress being made in recent years, and it is expected to continue to evolve as technology improves.
 
 #### 3. What drives traffic sign mapping?
 
@@ -106,3 +116,5 @@ To address this question, we used YOLOv5 as the object detection model and trigo
 
 
 #### 5. How accurately can a traffic sign be recognized using LiDAR data?
+
+
