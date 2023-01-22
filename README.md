@@ -253,7 +253,7 @@ info
 text
 
 #### The 6 Steps for Preprocessing in Object Detection
-<details><summary>Data acquisition:</summary> The first step is to acquire the data that will be used to train and test the YOLOv5 model. This can be done by collecting images and annotations of the objects that need to be detected.</details><br>
+<details><summary>Data acquisition:</summary> The first step is to acquire the data that will be used to train and test the YOLOv5 model. This can be done by collecting images and annotations of the objects that need to be detected.</details>
 <details><summary>Data cleaning:</summary> The next step is to clean the data by removing any irrelevant or duplicate data, and ensuring that the data is of high quality. This step is important to ensure that the model is only trained on relevant and accurate data.</details><br>
 <details><summary>Data annotation:</summary> Once the data is cleaned, it needs to be annotated in order to indicate the location of the objects that need to be detected. This step is usually done using annotation tools such as LabelImg, RectLabel, and Labelbox.</details><br>
 <details><summary>Data splitting:</summary> After the data is annotated, it needs to be split into training and testing sets. This is important to ensure that the model is tested on unseen data and to prevent overfitting.</details><br>
