@@ -218,3 +218,8 @@ In this second project, I leveraged the knowledge and skills I had gained from m
 
 ## <a id="#domain-knowledge-terminology-vision"></a>Terminology
 
+
+
+[Back to Table of Contents](#table-of-contents)
+# <a id="data-preprocessing"></a>4. Data Preprocessing
+The "Data Preprocessing" section of this portfolio showcases my skills and experience in preparing and cleaning data for analysis. This includes tasks such as data cleaning, data transformation, feature selection, data annotation, data normalization and data visualization. 
