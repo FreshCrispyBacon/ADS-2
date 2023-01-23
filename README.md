@@ -218,6 +218,10 @@ In this second project, I leveraged the knowledge and skills I had gained from m
 
 ## <a id="#domain-knowledge-terminology-vision"></a>Terminology
 
+LiDAR
+mAP
+Confidence
+Ground Truth
 
 
 [Back to Table of Contents](#table-of-contents)
