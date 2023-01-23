@@ -317,5 +317,4 @@ python code here
 
 ```py
 python code here
-kaka pipi
 ```
