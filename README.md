@@ -258,7 +258,7 @@ text
 
 #### The 6 Steps Bram and I Followed to Preprocess Data in Object Detection
 <details><summary>Data acquisition:</summary> The first step is to acquire the data that will be used to train and test the YOLOv5 model. This was done by by navigating Jupyter Notebook's server files with the terminal feature to acquire the data provided by IV-Infra objects that need to be detected.</details>
-<details><summary>Data Rescaling:</summary>The first thing we did with the data was to reduce the overall size of it. Every image was reduced to the resolution of 640x640 from 5120x5120. This[^1] effectively reduced the size of all the pictures to 640x640 from 5120x5120. The reason for this was to manageable, the total file size was roughly divided by 64. Additionally, 640x640 is optimal for the YOLOv5m weights; more on this later.</details>
+<details><summary>Data Rescaling:</summary>The first thing we did with the data was to reduce the overall size of it. Every image was reduced to the resolution of 640x640 from 5120x5120. This effectively reduced the size of all the pictures to 640x640 from 5120x5120. The reason for this was to manageable, the total file size was roughly divided by 64. Additionally, 640x640 is optimal for the YOLOv5m weights; more on this later.</details>
 <details><summary>Data cleaning:</summary> The next step was to clean the data by removing any irrelevant or duplicate data, and ensuring that the data is of high quality. This step is important to ensure that the model is only trained on relevant and accurate data. In our case this was the removal of many images lacking any clearly visible traffic signs.</details>
 <details><summary>Data annotation:</summary> Once the data was cleaned, it needs to be annotated in order to indicate the location of the traffic signs that need to be detected. This step is usually done using annotation tools such as LabelImg, RectLabel, or Roboflow. After testing these 3 popular options, Roboflow was clearly superior. Due its large amount of features, most importantly, we were able to divide our dataset into five equal parts for each member to annotate. Additionally, every object class created by any member was visible to all member, all in real-time.</details>
 <details><summary>Data splitting:</summary> After the data is annotated, it needed to be split into training, testing, and validation sets. This is important to ensure that the model is tested on unseen data and to prevent overfitting. The split chosen was a standard 70/20/10 split.</details>
@@ -351,7 +351,7 @@ python code here
 ```
 
 ### <a id="resize"></a>Resize images in a folder to 640x640 retaining the original name in new path
-[^1]:
+
 ```py
 import cv2
 from datetime import datetime
