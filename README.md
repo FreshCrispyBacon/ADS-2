@@ -319,7 +319,7 @@ python code here
 python code here
 ```
 
-### <details><summary>Resize images in a folder to 640x640</summary>
+### Resize images in a folder to 640x640 retaining the original name in new path
 ```py
 import cv2
 from datetime import datetime
@@ -355,4 +355,4 @@ for filename in glob.glob('alles/20221005_selectie_360_5/*'):
 print('Finished time: ', datetime.now())
 print('Total time: ', datetime.now()-now)
 ```
-</details>
+
