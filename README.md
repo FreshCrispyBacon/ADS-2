@@ -20,7 +20,7 @@
 - [5. Communication](#communication)
   - [Presentations](#presentations)
   - [Paper](#paper)
-
+- [6. Codesnippets](#codesnippets)
 ---
 
 # <a id="obligatory-criteria"></a>Obligatory Criteria
