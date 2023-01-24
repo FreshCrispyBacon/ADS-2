@@ -302,7 +302,8 @@ Vision
 
 ## Paper
 
-For our paper I contributed in 7 specific sections, aside from giving feedback on my teammates' work.
+The paper my group delivered at the end of the ADS Minor targeted the Vision project, as it was the longest project in the minor.
+For the paper I contributed in 7 specific sections, aside from giving feedback on the remaining sections and my teammates' work.
 
 <details><summary>Abstract</summary> Deze onderzoekspaper presenteert een methode om verkeersborden te herkennen en in kaart te brengen aan de hand van een reeks foto's. Het objectdetectiemodel dat in dit onderzoek wordt gebruikt, is YOLOv5. Dit model staat bekend om zijn hoge nauwkeurigheid, efficiëntie en real-time prestaties. De dataset die in dit onderzoek is gebruikt, is aangeleverd door IV-Infra en is gebruikt om het model te trainen. De goniometrische berekeningen zijn vervolgens ingezet om de gedetecteerde verkeersborden in kaart te brengen. Hierna is het NDW-dataset gebruikt ter controle. De resultaten van deze studie tonen de effectiviteit aan van het gebruik van YOLOv5 voor het herkennen en in kaart brengen van verkeersborden. Ook toont dit het potentieel van deze methode voor gebruik in real-world toepassingen, zoals autonome voertuigen en intelligente transportsystemen.</details>
 
@@ -328,8 +329,6 @@ For our paper I contributed in 7 specific sections, aside from giving feedback o
 Verder onderzocht het onderzoek ook het gebruik van LIDAR-technologie als een geschikt alternatief voor verkeersborddetectie. Het is eerder bewezen dat LIDAR-technologie een effectieve manier is om verkeersborden te detecteren en in kaart te brengen. Nader onderzoek wijst echter uit dat de prestaties en betrouwbaarheid onder verschillende licht- en weersomstandigheden drastisch afnemen.
 Met behulp van trigonometrische berekeningen kon het onderzoek de gedetecteerde verkeersborden in kaart brengen en met behulp van de NDW-database werden de berekende coördinaten geverifieerd. Deze aanpak kan worden gebruikt als referentie voor het in kaart brengen van verkeersborden in de toekomst.
 Al met al biedt deze onderzoek waardevolle inzichten in de mogelijkheden van YOLOv5 en zijn potentieel als hulpmiddel voor het in kaart brengen van verkeersborden, en het onderzoek zou kunnen worden uitgebreid om de robuustheid en nauwkeurigheid van YOLOv5 in verschillende scenario's te onderzoeken, zoals verschillende weersomstandigheden, verlichting en weg kwaliteit. De in deze onderzoek voorgestelde methoden kunnen als referentie dienen voor toekomstig onderzoek en ontwikkeling op het gebied van verkeersbordherkenning en -kartering. Het gebruik van Machine Learning en Neural Networks, en tools voor datavisualisatie hebben bewezen effectief te zijn voor het herkennen en in kaart brengen van verkeersborden, en voor het waarborgen van de veiligheid en efficiëntie van transportsystemen. Dit onderzoek draagt bij aan de voortdurende inspanningen om de veiligheid en efficiëntie van transportsystemen te verbeteren en kan worden toegepast in real-world toepassingen zoals autonome voertuigen en intelligente transportsystemen.
-![image](https://user-images.githubusercontent.com/74567759/214295840-ac0a24e4-36c6-49ae-a6ca-64a44898bb7a.png)
-</details>
 
 # <a id="codesnippets"></a>Code snippets for contributions 
 ## FoodBoost
