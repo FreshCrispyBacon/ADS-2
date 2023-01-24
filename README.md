@@ -351,7 +351,8 @@ python code here
 ```
 
 ### <a id="resize"></a>Resize images in a folder to 640x640 retaining the original name in new path
-[^1]```py
+[^1]:
+```py
 import cv2
 from datetime import datetime
 
