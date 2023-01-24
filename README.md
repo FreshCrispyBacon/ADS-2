@@ -319,7 +319,7 @@ python code here
 python code here
 ```
 
-# Resize images in a folder to 640x640
+### Resize images in a folder to 640x640
 ```py
 import cv2
 from datetime import datetime
