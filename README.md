@@ -278,16 +278,16 @@ text
 
 #### Data Augmentation
 
-- Rotation: Between -5° and +5°<br>
-<img src="rotation.png" alt="drawing" width="400"><br>
-- Hue: Between -30° and +30°<br>
-<img src="hue.png" alt="drawing" width="400"><br>
-- Saturation: Between -70 and +70<br>
-<img src="saturation.png" alt="drawing" width="400"><br>
-- Brightness: Between 0% and +80%<br>
-<img src="brightness.png" alt="drawing" width="400"><br>
-- Shear: ±12° Horizontal, ±4° Vertical<br>
-<img src="shear.png" alt="drawing" width="400"><br><br>
+- <details><summary>Rotation: Between -5° and +5°</summary><br>
+<img src="rotation.png" alt="drawing" width="400"><br><br></details>
+- <details><summary>Hue: Between -30° and +30°</summary><br>
+<img src="hue.png" alt="drawing" width="400"><br><br></details>
+- <details><summary>Saturation: Between -70 and +70</summary><br>
+<img src="saturation.png" alt="drawing" width="400"><br><br></details>
+- <details><summary>Brightness: Between 0% and +80%</summary><br>
+<img src="brightness.png" alt="drawing" width="400"><br><br></details>
+- <details><summary>Shear: ±12° Horizontal, ±4° Vertical</summary><br>
+<img src="shear.png" alt="drawing" width="400"><br><br><br></details>
 
 ### Dataset *NDW
 
