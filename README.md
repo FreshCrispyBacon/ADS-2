@@ -131,6 +131,7 @@ In this research, the use of computer vision techniques and the YOLOv5 object de
 
 ### Planning
 In this project, we initially planned to use Trello as our task management tool but ended up not utilizing it. Despite this, we were still able to effectively communicate and keep track of our tasks and progress.
+
 <details><summary>Planning Vision</summary><img src="Screenshot_20230121_103116.png"></details>
 
 [Back to Table of Contents](#table-of-contents)
@@ -166,20 +167,18 @@ During this project, which spanned over the first six weeks of the minor kick-of
 * [A Complete Guide To Recommender Systems](https://towardsdatascience.com/a-complete-guide-to-recommender-system-tutorial-with-sklearn-surprise-keras-recommender-5e52e8ceace1)
 
 ## <a id="#domain-knowledge-terminology-foodboost"></a>Terminology
-<details>
-<summary>
-Below are some terms and jargon that are explained in further detail
-</summary>
 
-- Nutri-Score
+Below are some terms and jargon that are explained in further detail
+
+<details><summary>Nutri-Score</summary>
   
-  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.
+  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.</details>
   
-- Nutri-Label
+<details><summary>Nutri-Label</summary>
   
-  Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per 100g or per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.
+  Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per 100g or per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet./details>
   
-- Recommender System
+<details><summary>Recommender System</summary>
   
   A recommender system is a type of algorithm that is used to suggest items to users based on their preferences and behavior. These systems are commonly used in online platforms such as e-commerce websites, streaming services, and social media. They help users discover new products, movies, music, articles and more that they may be interested in.
 
@@ -191,10 +190,9 @@ Below are some terms and jargon that are explained in further detail
 
   Hybrid systems: This type of systems combine the previous two types of recommendation, using both the content of the items and the behavior of other users to make recommendations.
 
-  Recommender systems can use various techniques to make recommendations such as matrix factorization, cosine similarity, and neural networks. These systems are constantly learning and adapting to the user's behavior, making their recommendations more accurate over time.
+  Recommender systems can use various techniques to make recommendations such as matrix factorization, cosine similarity, and neural networks. These systems are constantly learning and adapting to the user's behavior, making their recommendations more accurate over time.</details>
 
-</details>
-
+	
 [Back to Table of Contents](#table-of-contents)
 
 # <a id="domain-vision"></a>Vision
