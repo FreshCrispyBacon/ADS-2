@@ -263,18 +263,13 @@ text
 <details><summary>Data annotation:</summary> Once the data was cleaned, it needs to be annotated in order to indicate the location of the traffic signs that need to be detected. This step is usually done using annotation tools such as LabelImg, RectLabel, or Roboflow. After testing these 3 popular options, Roboflow was clearly superior. Due its large amount of features, most importantly, we were able to divide our dataset into five equal parts for each member to annotate. Additionally, every object class created by any member was visible to all member, all in real-time.</details>
 <details><summary>Data splitting:</summary> After the data is annotated, it needed to be split into training, testing, and validation sets. This is important to ensure that the model is tested on unseen data and to prevent overfitting. The split chosen was a standard 70/20/10 split.</details>
 <details><summary>Data normalization:</summary> This step was already executed in step 2 for convinience and resource-efficiency. Data Normaization can be done by rescaling the images to a uniform size and converting them to a format that is compatible with the YOLOv5 model.</details>
-<details><summary>Data augmentation:</summary> To increase the diversity of the data and to make the model more robust to different variations in the data, data augmentation can be applied to the training data. The augmentation techniques used were as follows:
-	Rotation: Between -5° and +5°
-	Hue: Between -30° and +30°
-	Contrast: Between -15 and +15
-	Brightness: Between 0% and +80%
-	Bounding Box: Shear: ±12° Horizontal, ±4° Vertical
+<details><summary>Data augmentation:</summary> To increase the diversity of the data and to make the model more robust to different variations in the data, data augmentation can be applied to the training data. The augmentation techniques used were as follows:<br>
+	* Rotation: Between -5° and +5°<br>
+	* Hue: Between -30° and +30°<br>
+	* Saturation: Between -70 and +70<br>
+	* Brightness: Between 0% and +80%<br>
+	* Bounding Box: Shear: ±12° Horizontal, ±4° Vertical<br>
 Do note these values are final values after several tweaks according to model performance.</details>
-
-#### Data cleaning
-
-info
-text
 
 #### The Annotation process
 
