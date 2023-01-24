@@ -268,7 +268,7 @@ text
 	* Hue: Between -30° and +30°<br>
 	* Saturation: Between -70 and +70<br>
 	* Brightness: Between 0% and +80%<br>
-	* Bounding Box: Shear: ±12° Horizontal, ±4° Vertical<br>
+	* Shear: ±12° Horizontal, ±4° Vertical<br>
 Do note these values are final values after several tweaks according to model performance.</details>
 
 #### The Annotation process
@@ -276,10 +276,18 @@ Do note these values are final values after several tweaks according to model pe
 info
 text
 
-#### Data Augmantation
+#### Data Augmentation
 
-info
-text
+* Rotation: Between -5° and +5°<br><br>
+<img src="rotation.png">
+* Hue: Between -30° and +30°<br><br>
+<img src="hue.png">
+* Saturation: Between -70 and +70<br>
+<img src="saturation.png">
+* Brightness: Between 0% and +80%<br>
+<img src="brightness.png">
+* Shear: ±12° Horizontal, ±4° Vertical<br>
+<img src="shear.png"><br>
 
 ### Dataset *NDW
 
