@@ -331,15 +331,15 @@ Do note these values are final values after several tweaks according to model pe
 During this minor I have presented x presentations.
 
 Foodboost
-[Internal presentation: Week 2](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/Eczc6ErKUdVCrda20OWTmQsBRuUva7Q9KIhfXh_3jDr_zQ?e=3jhHW3)
-[Internal presentation: Week 4](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EQgh5mEaSolIo9A_dZAONb0B4EJPXDnj32Vhvfc35AEYDQ?e=POIJYn)
-[Internal presentation: Week 6](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EYqM85L2pMVDh2BDRN4D3ogBsuwJ5KREJzHwfuxnVrA9mw?e=PgTDgJ)
+- [Internal presentation: Week 2](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/Eczc6ErKUdVCrda20OWTmQsBRuUva7Q9KIhfXh_3jDr_zQ?e=3jhHW3)
+- [Internal presentation: Week 4](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EQgh5mEaSolIo9A_dZAONb0B4EJPXDnj32Vhvfc35AEYDQ?e=POIJYn)
+- [Internal presentation: Week 6](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EYqM85L2pMVDh2BDRN4D3ogBsuwJ5KREJzHwfuxnVrA9mw?e=PgTDgJ)
 
 
 Vision
-[Internal presentation: Week 10](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EWl4RZUKnr9Kp-U87WVuKGcBfkoiaxHZwFGctiNuMdPZYQ?e=rURSXh)
-[External presentation: Week 14](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/Ecod069mrstBo4Ole5smbj4BOz4sPxcYHXGw4k2154lhiw?e=nmCccx)
-External presentation: Week 20 - link will be published 1st February
+- [Internal presentation: Week 10](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EWl4RZUKnr9Kp-U87WVuKGcBfkoiaxHZwFGctiNuMdPZYQ?e=rURSXh)
+- [External presentation: Week 14](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/Ecod069mrstBo4Ole5smbj4BOz4sPxcYHXGw4k2154lhiw?e=nmCccx)
+- External presentation: Week 20 - link will be published 1st February
 
 ## Paper
 
