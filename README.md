@@ -283,19 +283,15 @@ intro here
 
 ### Dataset *IV-Infra
 
-info
-text
+The IV-Infra dataset is a dataset that was used in this research project and it contains a series of photographs taken in October 2022 near Haarlem. The series of photos are taken with a resolution of 5120 by 5120 pixels and they represent a complete view of the area. Each photo in the series has a different view, the first photo looks forward, the second photo looks to the front right, the third photo to the rear right, the fourth to the rear left, the fifth photo to the front left, and the sixth photo is taken to the top. The dataset also includes the coordinates at which the photos were taken, the heading, pitch, roll, the date and time when the photos were taken. This dataset provide a detailed view of the area and can be used in conjunction with the trigonometric calculations to triangulate the position of the traffic signs in 3D space and the National Data Warehouse (NDW) database to verify the calculated coordinates of the traffic signs.
 
-#### Images, LiDAR and Coordinates
-
-info
-text
+In addition to the photographs, IV-Infra also supplied LiDAR data that can be used in the research. LiDAR data is a technology that uses laser beams to measure distances and can be used to create a detailed 3D map of an area. This LiDAR data could be used to supplement the photographs in the research to create a more detailed and accurate representation of the area being studied.
 
 #### The 6 Steps Bram and I Followed to Preprocess Data in Object Detection
 
 Data acquisition: The first step is to acquire the data that will be used to train and test the YOLOv5 model. This was done by by navigating Jupyter Notebook's server files with the terminal feature to acquire the data provided by IV-Infra objects that need to be detected.
 
-Data Rescaling: The first thing we did with the data was to reduce the overall size of it. Every image was reduced to the resolution of 640x640 from 5120x5120. This effectively reduced the size of all the pictures to 640x640 from 5120x5120. The reason for this was to manageable, the total file size was roughly divided by 64. Additionally, 640x640 is optimal for the YOLOv5m weights; more on this later.
+Data Rescaling: The first thing we did with the data was to reduce the overall size of it. Every image was reduced to the resolution of 640 by 640 from 5120 by 5120. This effectively reduced the size of all the pictures to 640 by 640 from 5120 by 5120. The reason for this was to manageable, the total file size was roughly divided by 64. Additionally, 640 by 640 is optimal for the YOLOv5m weights; more on this later.
 Data cleaning: The next step was to clean the data by removing any irrelevant or duplicate data, and ensuring that the data is of high quality. This step is important to ensure that the model is only trained on relevant and accurate data. In our case this was the removal of many images lacking any clearly visible traffic signs.
 
 Data annotation: Once the data was cleaned, it needs to be annotated in order to indicate the location of the traffic signs that need to be detected. This step is usually done using annotation tools such as LabelImg, RectLabel, or Roboflow. After testing these 3 popular options, Roboflow was clearly superior. Due its large amount of features, most importantly, we were able to divide our dataset into five equal parts for each member to annotate. Additionally, every object class created by any member was visible to all member, all in real-time.
