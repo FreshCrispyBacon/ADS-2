@@ -36,7 +36,7 @@
 There were two projects we worked on. The first project is Foodboost, and the second project is Vision (IV-Infra). I will cover both of them seperately here.
 
 ##  <a id="the-project-foodboost"></a>Foodboost
-The goal of Project Foodboost was to develop a recommendation system that helps users adopt healthier eating habits. Since the concept of "healthy" can be subjective, our approach was to gradually introduce more nutritious options over an extended period of time, recognizing that eating well is a long-term lifestyle change, not a temporary trend.
+The overarching objective of the Foodboost project was to develop a recipe prediction model. We elected to utilize the Nutri score, a system devised in France that is gradually being adopted in the Netherlands to raise awareness of food nutrition. Our aim was to predict recipes that gradually incorporate healthier ingredients, allowing users of our model to gradually adjust to healthier eating habits without drastic changes. We believe that this approach makes it more feasible for individuals to maintain a healthier lifestyle in the long term.
 
 For this goal, we set the following research questions:
 1. How can we predict a healthier diet for someone based on their previous recipes?
@@ -233,13 +233,17 @@ intro here
 
 ### Dataset *Allerhande
 
-info
-text
+For the Foodboost project, data was obtained from Albert Heijn's recipe repository, which includes information on ingredients, nutritional values, and labels. The nutritional values were of particular importance for calculating the Nutri score and associated label. The CSV files were loaded into the Pandas library for data analysis.
+We conducted further research on the Nutri score and the factors that contribute to its calculation, including energy, sugar, saturated fatty acids, sodium, fiber, and protein. Using Jupyter, we linked multiple datasets to facilitate searching and utilized libraries such as Pandas and NumPy for data manipulation. We also employed visualization techniques using Matplotlib to better understand the data.
+Cleaning of the data was performed by removing duplicate values and rows with minimal information. We also learned to filter data and utilized specific columns for calculations, sorting, and other purposes. Additionally, we created features that calculated the Nutri Score and label for each recipe based on its ingredients.
+We each experimented with different models to predict whether a recipe would be considered healthy (Nutri label A or B) or unhealthy (Nutri label C, D, or E) based on its ingredients. Through this process, we gained an understanding of the various models available, their input and output requirements, and the importance of providing appropriate data to avoid inaccurate results.
+In an attempt to predict which recipes a user would prefer based on their previous choices, we encountered a limitation with the available data as it did not include any user information. As a result, we were unable to validate our predictions and ultimately determined that the Albert Heijn dataset was insufficient for our research objectives. We subsequently sought additional data to continue our investigation.
 
 ### Dataset *Food.com
 
-info
-text
+During our research, we discovered the popular Food.com dataset available on Kaggle.com, which not only included recipes but also reviews. This provided us with a larger dataset to work with and a means to validate our results. We imported these datasets to the server and began our analysis.
+Our objective was to predict, based on ingredients and labels, whether a user would also enjoy a different recipe. With this information, we aimed to develop a recommendation system that gradually introduces healthier options. To accomplish this, we created a binary table, which included columns for all ingredients and labels and filled in a "1" if a recipe contained an ingredient or label and "0" if it did not. The large number of recipes resulted in a data frame with over 750 million data points, causing some performance issues. However, it enabled us to make predictions by referencing a user's previously liked recipes (rated 4 or 5 stars) and suggesting new recipes that the model predicts they would also enjoy.
+Unfortunately, this proved to be more challenging than anticipated and our final model predicted that a user would like every recipe.
 
 ## <a id="data-preprocessing-vision"></a>Project Vision
 
