@@ -9,7 +9,7 @@
 - [1. The Project](#the-project)
   - [Foodboost](#the-project-foodboost)
   - [Vision](#the-project-vision)
-- [2. Predictive Models](#predictive-models)
+- [2. Predictive Analytics](#predictive-models)
   - [Foodboost (Decision Tree Classifier)](#predictive-models-foodboost)
   - [Vision (YOLOv5)](#predictive-models-vision)
 - [3. Domain Knowledge](#domain-knowledge)
@@ -140,7 +140,7 @@ In this project, we initially planned to use Trello as our task management tool 
 <details><summary>Planning Vision</summary><img src="Screenshot_20230121_103116.png"></details>
 
 [Back to Table of Contents](#table-of-contents)
-# <a id="predictive-models"></a>2. Predictive Models
+# <a id="predictive-models"></a>2. Predictive Analytics
 
 I have created multiple predictive models, which I will present and discuss separately for each project.
 ## <a id="predictive-models-foodboost"></a>Project Foodboost
@@ -150,6 +150,8 @@ Project foodboost was mainly based around basic machine learning models.
 During the Foodboost project, we familiarized ourselves with various models used in data science. These models are trained on basic data and require a set of variables and an objective function to make predictions on new data. There are different models available in the data science world which can be divided into two categories: continuous and discrete models. Continuous models provide a predicted numerical outcome, while discrete models, also known as categorical models, give a specific category as the result. For example, predicting the healthiness of a dish would utilize a discrete model. Some well-known continuous models include Linear Regression, Polynomial Regression, Ridge, and Lasso. Some examples of discrete models include Logistic Regression, Decision Tree, Support Vector Machines, Random Forest Classifier, and K-Nearest Neighbor.
 
 We experimented with these models to understand the type of inputs they expect and the outputs they provide. We also became familiar with various metrics to evaluate the performance of the models, such as accuracy, precision, and recall.
+
+<img src="real-label.jpeg" alt="drawing" width="600"><br>
 
 Initially, we tried to make predictions on the Albert Heijn dataset. Our goal was to determine the nutri-score and nutri-label of recipes based on their nutritional values. We used Linear Regression for the nutri-score and Logistic Regression for the nutri-label. After gaining some knowledge on how these models can be used, we moved on to the Food.com database from Kaggle.
 
