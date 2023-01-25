@@ -122,9 +122,13 @@ Once the coordinates have been verified, they can be plotted on a map using a Py
 
 In this way, traffic sign mapping is accomplished by using image processing techniques to detect and identify traffic signs, and then using machine learning and data visualization tools to verify the location of the traffic signs and map them on a map.
 
-#### 4. Which data from the NDW will be integrated into the Neural Network?
+#### 4. How can the ground truth be optimally determined?
 
+Ground truth refers to the actual, correct information or labels associated with a dataset. It is used as a benchmark to evaluate the performance of a machine learning model. In the context of this research, the ground truth refers to the correct location and attributes of traffic signs. In order to determine the ground truth, the location of the traffic signs needs to be verified against a reliable source of information.
 
+The Dutch National Road Traffic Data Portal (NDW) database was used as a source of ground truth. The NDW database contains information on traffic signs in the Netherlands, including their location and attributes. By cross-referencing the calculated coordinates of the traffic signs with the NDW database, it was possible to verify that the traffic signs have been placed in the correct location and that they conform to national and international standards.
+
+This approach of using the NDW database as a source of ground truth was proven to be a reliable and efficient way to determine the accuracy of the proposed method. However, it's worth mentioning that further research could be done to explore alternative ways to optimize the determination of ground truth, such as using other databases or manual annotation by experts.
 
 #### 5. How accurately can a traffic sign be recognized using LiDAR data?
 
