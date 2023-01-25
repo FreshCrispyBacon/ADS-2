@@ -142,7 +142,15 @@ I have created multiple predictive models, which I will present and discuss sepa
 
 Project foodboost was mainly based around basic machine learning models.
 
-content here
+During the Foodboost project, we familiarized ourselves with various models used in data science. These models are trained on basic data and require a set of variables and an objective function to make predictions on new data. There are different models available in the data science world which can be divided into two categories: continuous and discrete models. Continuous models provide a predicted numerical outcome, while discrete models, also known as categorical models, give a specific category as the result. For example, predicting the healthiness of a dish would utilize a discrete model. Some well-known continuous models include Linear Regression, Polynomial Regression, Ridge, and Lasso. Some examples of discrete models include Logistic Regression, Decision Tree, Support Vector Machines, Random Forest Classifier, and K-Nearest Neighbor.
+
+We experimented with these models to understand the type of inputs they expect and the outputs they provide. We also became familiar with various metrics to evaluate the performance of the models, such as accuracy, precision, and recall.
+
+Initially, we tried to make predictions on the Albert Heijn dataset. Our goal was to determine the nutri-score and nutri-label of recipes based on their nutritional values. We used Linear Regression for the nutri-score and Logistic Regression for the nutri-label. After gaining some knowledge on how these models can be used, we moved on to the Food.com database from Kaggle.
+
+We adopted a different approach with the Food.com dataset by converting it into a binary table, where a column was created for every existing label and ingredient. A "1" was entered for each recipe if it contained the label or ingredient, and a "0" if it did not. This resulted in a very large dataset of ones and zeroes. We also mathematically determined the nutri-score and nutri-label. Our aim was to predict whether a user would also like a certain recipe. The Food.com dataset includes recipes from multiple authors with ratings, and our plan was for the model to check for each user which recipes they might still like and then suggest healthier options that are also tasty (recipes with a rating of 4 or 5 on a scale of 1-5).
+
+Initially, we made a model for an author by splitting their data into a training and test set and using a Random Forest Classifier with hyperparameter tuning using Optuna to find the best n_estimators, max_depth and min_samples_leaf. We used the accuracy score as a metric and achieved an accuracy of 0.948. However, upon further experimentation, we discovered that the model was predicting that the author liked every recipe, even ones that they had previously disliked. We suspect that this was due to the large size of the binary table and the high number of variables, which led to the model not being able to handle the large number of zeros. In retrospect, we realized that we had not scaled the data, which may have contributed to a better model performance.
 
 ## <a id="predictive-models-vision"></a>Project Vision
 
