@@ -259,9 +259,9 @@ The "Data Preprocessing" section of this portfolio showcases my skills and exper
 
 ## <a id="data-preprocessing-foodboost"></a>Project Foodboost
 
-The first dataset is called "Allerhande" and is a recipe repository from Albert Heijn, a Dutch supermarket chain. The dataset includes information on ingredients, nutritional values, and labels. We used the nutritional values to calculate the Nutri score and associated label, which is a measure of the healthiness of a recipe. We used the Pandas library for data analysis and visualization techniques using Matplotlib to better understand the data. They learned to filter data and utilized specific columns for calculations, sorting, and other purposes. We also created features that calculated the Nutri Score and label for each recipe based on its ingredients. We experimented with different models to predict whether a recipe would be considered healthy or unhealthy based on its ingredients. However, we encountered a limitation with the available data as it did not include any user information, which made it unable to validate predictions.
+The first dataset is called "Allerhande" and is a recipe repository from Albert Heijn, a Dutch supermarket chain. The dataset includes information on ingredients, nutritional values, and labels. We used the nutritional values to calculate the Nutri score and associated label, which is a measure of the healthiness of a recipe. We used the Pandas library for data analysis and visualization techniques using Matplotlib to better understand the data. 
 
-The second dataset is called "Food.com" and is available on Kaggle.com. This dataset includes recipes and reviews, which provided the researchers with a larger dataset to work with and a means to validate their results. Our objective was to predict, based on ingredients and labels, whether a user would also enjoy a different recipe. We aimed to develop a recommendation system that gradually introduces healthier options. We created a binary table, which included columns for all ingredients and labels and filled in a "1" if a recipe contained an ingredient or label and "0" if it did not. However, the large number of recipes resulted in a data frame with over 750 million data points, which caused some performance issues. We encountered more challenges than anticipated and their final model predicted that a user would like every recipe.
+The second dataset is called "Food.com" and is available on Kaggle.com. This dataset includes recipes and reviews, which provided the researchers with a larger dataset to work with and a means to validate their results. Our objective was to predict, based on ingredients and labels, whether a user would also enjoy a different recipe. We aimed to develop a recommendation system that gradually introduces healthier options. 
 
 ### Dataset *Allerhande
 
@@ -279,7 +279,9 @@ Unfortunately, this proved to be more challenging than anticipated and our final
 
 ## <a id="data-preprocessing-vision"></a>Project Vision
 
-intro here
+In this research project, the IV-Infra dataset was used to aid in the detection and mapping of traffic signs. The dataset contains a series of photographs taken in October 2022 near Haarlem with a resolution of 5120 by 5120 pixels, which provides a complete view of the area. The dataset also includes information such as the coordinates, heading, pitch, roll, and the date and time when the photographs were taken. Additionally, IV-Infra also supplied LiDAR data, which is a technology that uses laser beams to measure distances and can create a detailed 3D map of an area.
+
+The NDW dataset, or the National Road Traffic Sign Database, was also used in the research. This dataset contains information on traffic sign characteristics such as type, placement and locations
 
 ### Dataset *IV-Infra
 
