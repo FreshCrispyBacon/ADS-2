@@ -74,7 +74,7 @@ Initially, we had intended to utilize Trello as a means of keeping each other in
 In this research project, the context was to develop a data science solution for checking the status of traffic signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of traffic signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. 
 
 For this goal, we set the following research questions:
-1. "How can traffic signs be recognized and mapped using a series of photos?" 
+1. How can traffic signs be recognized and mapped using a series of photos?
 2. To what extent has research been done into recognizing traffic signs by means of Machine Learning and/or Neural Networks?
 3. What drives traffic sign mapping?
 4. Which data from the NDW will be integrated into the Neural Network?
@@ -90,7 +90,7 @@ Additionally, the model can be utilized to trigger actions based on the recognit
 
 ### Conclusions
 
-#### 1. "How can traffic signs be recognized and mapped using a series of photos?" 
+#### 1. How can traffic signs be recognized and mapped using a series of photos?
 
 To address this question, we used YOLOv5 as the object detection model and trigonometric calculations to map the detected traffic signs. We also used a dataset provided by IV-Infra and compared the results to the traffic sign records held by NDW. Overall, the context and research question were clearly defined and were reasonable given the need for an efficient and accurate solution for monitoring traffic signs.
 
