@@ -292,19 +292,25 @@ info
 text
 
 #### The 6 Steps Bram and I Followed to Preprocess Data in Object Detection
-<details><summary>Data acquisition:</summary> The first step is to acquire the data that will be used to train and test the YOLOv5 model. This was done by by navigating Jupyter Notebook's server files with the terminal feature to acquire the data provided by IV-Infra objects that need to be detected.</details>
-<details><summary>Data Rescaling:</summary>The first thing we did with the data was to reduce the overall size of it. Every image was reduced to the resolution of 640x640 from 5120x5120. This effectively reduced the size of all the pictures to 640x640 from 5120x5120. The reason for this was to manageable, the total file size was roughly divided by 64. Additionally, 640x640 is optimal for the YOLOv5m weights; more on this later.</details>
-<details><summary>Data cleaning:</summary> The next step was to clean the data by removing any irrelevant or duplicate data, and ensuring that the data is of high quality. This step is important to ensure that the model is only trained on relevant and accurate data. In our case this was the removal of many images lacking any clearly visible traffic signs.</details>
-<details><summary>Data annotation:</summary> Once the data was cleaned, it needs to be annotated in order to indicate the location of the traffic signs that need to be detected. This step is usually done using annotation tools such as LabelImg, RectLabel, or Roboflow. After testing these 3 popular options, Roboflow was clearly superior. Due its large amount of features, most importantly, we were able to divide our dataset into five equal parts for each member to annotate. Additionally, every object class created by any member was visible to all member, all in real-time.</details>
-<details><summary>Data splitting:</summary> After the data is annotated, it needed to be split into training, testing, and validation sets. This is important to ensure that the model is tested on unseen data and to prevent overfitting. The split chosen was a standard 70/20/10 split.</details>
-<details><summary>Data normalization:</summary> This step was already executed in step 2 for convinience and resource-efficiency. Data Normaization can be done by rescaling the images to a uniform size and converting them to a format that is compatible with the YOLOv5 model.</details>
-<details><summary>Data augmentation:</summary> To increase the diversity of the data and to make the model more robust to different variations in the data, data augmentation can be applied to the training data. The augmentation techniques used were as follows:<br>
+
+Data acquisition: The first step is to acquire the data that will be used to train and test the YOLOv5 model. This was done by by navigating Jupyter Notebook's server files with the terminal feature to acquire the data provided by IV-Infra objects that need to be detected.
+
+Data Rescaling: The first thing we did with the data was to reduce the overall size of it. Every image was reduced to the resolution of 640x640 from 5120x5120. This effectively reduced the size of all the pictures to 640x640 from 5120x5120. The reason for this was to manageable, the total file size was roughly divided by 64. Additionally, 640x640 is optimal for the YOLOv5m weights; more on this later.
+Data cleaning: The next step was to clean the data by removing any irrelevant or duplicate data, and ensuring that the data is of high quality. This step is important to ensure that the model is only trained on relevant and accurate data. In our case this was the removal of many images lacking any clearly visible traffic signs.
+
+Data annotation: Once the data was cleaned, it needs to be annotated in order to indicate the location of the traffic signs that need to be detected. This step is usually done using annotation tools such as LabelImg, RectLabel, or Roboflow. After testing these 3 popular options, Roboflow was clearly superior. Due its large amount of features, most importantly, we were able to divide our dataset into five equal parts for each member to annotate. Additionally, every object class created by any member was visible to all member, all in real-time.
+
+Data splitting: After the data is annotated, it needed to be split into training, testing, and validation sets. This is important to ensure that the model is tested on unseen data and to prevent overfitting. The split chosen was a standard 70/20/10 split.
+
+Data normalization: This step was already executed in step 2 for convinience and resource-efficiency. Data Normaization can be done by rescaling the images to a uniform size and converting them to a format that is compatible with the YOLOv5 model.
+
+Data augmentation: To increase the diversity of the data and to make the model more robust to different variations in the data, data augmentation can be applied to the training data. The augmentation techniques used were as follows:<br>
 	* Rotation: Between -5° and +5°<br>
 	* Hue: Between -30° and +30°<br>
 	* Saturation: Between -70 and +70<br>
 	* Brightness: Between 0% and +80%<br>
 	* Shear: ±12° Horizontal, ±4° Vertical<br>
-Do note these values are final values after several tweaks according to model performance.</details>
+Do note these values are final values after several tweaks according to model performance.
 
 #### Data Augmentation
 
@@ -373,28 +379,14 @@ python code here
 
 ## Vision
 
-```py
-python code here
-```
-
 ### <a id="Detect-and-Map"></a>The Python code below is the A to Z workflow from Image Detection to Map Creation
 [Source File](measureAutomateV2.py)
 
 ```py
-import time
-import matplotlib.image as mpimg
 import pandas as pd
-import numpy as np
-import math
-import torch
 from yolov5 import detect
-import glob
-import os
-import shutil
-import matplotlib.pyplot as plt
+import glob, shutil, math, warnings
 import plotly.express as px
-import string
-import warnings
 warnings.filterwarnings('ignore')
 
 pd.set_option('display.max_columns', None)
@@ -429,25 +421,6 @@ for i in range(0,len(glob.glob('C:/Users/davka/Downloads/ads2/resizedfinal/*')),
     foto1_name = 'a'
     foto2 = glob.glob('C:/Users/davka/Downloads/ads2/resizedfinal/*')[i+1]
     foto2_name = 'b'
-
-    # optional: locatie bord berekenen op beide fotos en gemiddelde nemen
-
-    # #foto1 = "C:/Users/davka/Downloads/ads2/resized/20221005112857432_360_01.jpg"
-    # #foto1 = "C:/Users/davka/Downloads/ads2/resized/20221005113402003_360_01.jpg" #tijdelijk bord
-    # #foto1 = 'C:/Users/davka/Downloads/ads2/resized/20221005113444641_360_01.jpg'
-    # #foto1 = 'C:/Users/davka/Downloads/ads2/resized/20221005112557143_360_01.jpg' #foto2 is accurater in dit geval
-    # #foto1 = 'C:/Users/davka/Downloads/ads2/resized/20221005112618203_360_01.jpg'
-    # #foto1 = 'C:/Users/davka/Downloads/ads2/resized/20221005112848700_360_01.jpg'
-    # foto1 = 'C:/Users/davka/Downloads/ads2/clean folder/20221005112638232_360_01.jpg' #veel verkeerborden
-    # foto1_name = 'a'
-    # #foto2 = "C:/Users/davka/Downloads/ads2/resized/20221005112857944_360_01.jpg"
-    # #foto2 = "C:/Users/davka/Downloads/ads2/resized/20221005113402518_360_01.jpg" #tijdelijk bord
-    # #foto2 = 'C:/Users/davka/Downloads/ads2/resized/20221005113445155_360_01.jpg'
-    # #foto2 = 'C:/Users/davka/Downloads/ads2/resized/20221005112557655_360_01.jpg' #foto2 is accurater in dit geval
-    # #foto2 = 'C:/Users/davka/Downloads/ads2/resized/20221005112618716_360_01.jpg'
-    # #foto2 = 'C:/Users/davka/Downloads/ads2/resized/20221005112849215_360_01.jpg'
-    # foto2 = 'C:/Users/davka/Downloads/ads2/clean folder/20221005112638744_360_01.jpg' #veel verkeersboden
-    # foto2_name = 'b'
 
     # foto 1 yolo runnen
     detect.run(weights="C:/Users/davka/PycharmProjects/pythonProject/yolov5/runs/train/exp13/weights/best.pt",
