@@ -1,5 +1,6 @@
 # David's Portfolio - Group 2 of ADS
 ### Student: David Kaldor - 20141211
+#### Closely collaberated with Bram
 
 
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc -->
