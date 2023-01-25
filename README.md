@@ -233,11 +233,19 @@ In this second project, I leveraged the knowledge and skills I had gained from m
 
 ## <a id="#domain-knowledge-terminology-vision"></a>Terminology
 
-LiDAR
-mAP
-Confidence
-Ground Truth
+<details><summary>LiDAR</summary>
+LiDAR, which stands for Laser Imaging Detection And Ranging, is a technology used to measure distances by emitting a beam of light towards an object and measuring the time it takes for the signal to be reflected back. This process is similar to echolocation, but significantly faster due to the high speed of light compared to sound.</details>
 
+<details><summary>Epoch</summary>
+An epoch refers to a complete run of the dataset through the model. This process updates the model's weights and improves its predictions. However, using too few epochs can result in an underfit model, which has poor predictive capabilities, while using too many epochs can lead to an overfit model that struggles to handle new data. Therefore, it is crucial to find an optimal number of epochs to ensure the model's performance.</details>
+
+<details><summary>mAP</summary>The mAP, which stands for Mean Average Precision, is a metric commonly used by object detection models to evaluate their performance. It is calculated by utilizing the Precision-Recall Curve, where the average area under the curve is referred to as the AP. The mAP is then determined by taking the mean of the AP across all classes.</details>
+
+<details><summary>Confidence</summary>Confidence is a value commonly seen in object recognition photographs and videos, represented as a number between 0 and 1, next to the bounding box. This number is determined by the model's estimate of the probability that the assigned class is correct and the benchmark that measures how well the annotation box fits the object. Together, these two factors form the confidence.</details>
+
+<details><summary>Ground Truth</summary>The ground truth is the actual data or reality that is used as a benchmark for evaluating the performance of the model. By comparing the model's predictions to the ground truth, the quality of the model can be judged. It serves as a reference point for evaluating the accuracy of the model's predictions.</details>
+
+<details><summary>Rijksdriehoeks coordinates</summary>Rijksdriehoekstelsel is a method of noting coordinates commonly used in the Netherlands. The central point of the system is located in Amersfoort, at coordinates x = 155000 and y = 463000. These coordinates are in meters, making it easy to perform calculations. By knowing the distance traveled and the direction, it is simple to calculate the new coordinates.</details>
 
 [Back to Table of Contents](#table-of-contents)
 # <a id="data-preprocessing"></a>4. Data Preprocessing
