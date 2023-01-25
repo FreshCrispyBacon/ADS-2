@@ -70,10 +70,10 @@ The results of such a study would provide an indication of the effectiveness of 
 Initially, we had intended to utilize Trello as a means of keeping each other informed about progress made on the project. However, as we progressed, we found ourselves neglecting Trello in favor of prioritizing the completion of tasks.
 
 ## <a id="the-project-vision"></a>Vision
-In this research project, the context was to develop a data science solution for checking the status of road signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of road signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. 
+In this research project, the context was to develop a data science solution for checking the status of traffic signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of traffic signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. 
 
 For this goal, we set the following research questions:
-1. "How can road signs be recognized and mapped using a series of photos?" 
+1. "How can traffic signs be recognized and mapped using a series of photos?" 
 2. To what extent has research been done into recognizing traffic signs by means of Machine Learning and/or Neural Networks?
 3. What drives traffic sign mapping?
 4. Which data from the NDW will be integrated into the Neural Network?
@@ -89,9 +89,9 @@ Additionally, the model can be utilized to trigger actions based on the recognit
 
 ### Conclusions
 
-#### 1. "How can road signs be recognized and mapped using a series of photos?" 
+#### 1. "How can traffic signs be recognized and mapped using a series of photos?" 
 
-To address this question, we used YOLOv5 as the object detection model and trigonometric calculations to map the detected road signs. We also used a dataset provided by IV-Infra and compared the results to the road sign records held by NDW. Overall, the context and research question were clearly defined and were reasonable given the need for an efficient and accurate solution for monitoring road signs.
+To address this question, we used YOLOv5 as the object detection model and trigonometric calculations to map the detected traffic signs. We also used a dataset provided by IV-Infra and compared the results to the traffic sign records held by NDW. Overall, the context and research question were clearly defined and were reasonable given the need for an efficient and accurate solution for monitoring traffic signs.
 
 #### 2. To what extent has research been done into recognizing traffic signs by means of Machine Learning and/or Neural Networks?
 
@@ -113,7 +113,7 @@ The research question can be approached by using a combination of image processi
 
 One way to accomplish traffic sign mapping is to first use image processing techniques such as YOLOv5 to detect and identify traffic signs in images captured by cameras mounted on a vehicle. The output of YOLOv5 detection will give type of detected traffic signs in the images.
 
-Then, trigononmetric calculations are performed on a pair of YOLOv5 output images to retrieve new coordinates signifying the detected road sign's location.
+Then, trigononmetric calculations are performed on a pair of YOLOv5 output images to retrieve new coordinates signifying the detected traffic sign's location.
 
 Next, these coordinates can be verified against the National Data Warehouse (NDW) database, which contains information on traffic signs in the Netherlands, including their location and attributes. By cross-referencing the coordinates with the NDW database, it can be verified that the traffic signs have been placed in the correct location and that they conform to national and international standards.
 
@@ -127,7 +127,7 @@ In this way, traffic sign mapping is accomplished by using image processing tech
 
 #### 5. How accurately can a traffic sign be recognized using LiDAR data?
 
-In this research, the use of computer vision techniques and the YOLOv5 object detection algorithm was chosen as the primary approach for detecting and mapping road signs in a series of photos. YOLOv5, known for its high accuracy and real-time performance, was trained on the dataset provided by IV-Infra and was able to detect road signs with high accuracy. This approach was found to be highly effective in detecting and mapping road signs in a variety of environments. In contrast, LiDAR technology, while widely used in tasks such as object detection, mapping, and navigation, proved to be less suitable for this specific task. LiDAR technology is relatively slow, unreliable and requires a clear line of sight to the object, which makes it hard to detect objects that are obscured or behind other objects. Furthermore, while LiDAR is mainly used to detect objects in 3D space, the detection of road signs is mainly a 2D task, which can be achieved with high accuracy using computer vision techniques and YOLOv5 object detection algorithm. This approach, therefore, proved to be more efficient and reliable for this study.
+In this research, the use of computer vision techniques and the YOLOv5 object detection algorithm was chosen as the primary approach for detecting and mapping traffic signs in a series of photos. YOLOv5, known for its high accuracy and real-time performance, was trained on the dataset provided by IV-Infra and was able to detect traffic signs with high accuracy. This approach was found to be highly effective in detecting and mapping traffic signs in a variety of environments. In contrast, LiDAR technology, while widely used in tasks such as object detection, mapping, and navigation, proved to be less suitable for this specific task. LiDAR technology is relatively slow, unreliable and requires a clear line of sight to the object, which makes it hard to detect objects that are obscured or behind other objects. Furthermore, while LiDAR is mainly used to detect objects in 3D space, the detection of traffic signs is mainly a 2D task, which can be achieved with high accuracy using computer vision techniques and YOLOv5 object detection algorithm. This approach, therefore, proved to be more efficient and reliable for this study.
 
 ### Planning
 In this project, we initially planned to use Trello as our task management tool but ended up not utilizing it. Despite this, we were still able to effectively communicate and keep track of our tasks and progress.
@@ -172,11 +172,11 @@ Below are some terms and jargon that are explained in further detail
 
 <details><summary>Nutri-Score</summary>
   
-  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.</details>
+  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. "A" being the best, and "E" being the worst. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.</details>
   
 <details><summary>Nutri-Label</summary>
   
-  Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per 100g or per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.</details>
+  Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.</details>
   
 <details><summary>Recommender System</summary>
   
@@ -199,11 +199,11 @@ Below are some terms and jargon that are explained in further detail
 # <a id="domain-vision"></a>Vision
 In this project, entitled "Vision", I delved into the field of computer vision and object detection. Having taken a course on computer vision the prior year, I was already familiar with the principles of this area of study. However, I had always been particularly interested in the application of object detection, and this project provided me with the opportunity to work with it firsthand.
 
-The context of this research project was to develop a data science solution for checking the status of road signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of road signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. The research question being addressed was, "How can road signs be recognized and mapped using a series of photos?"
+The context of this research project was to develop a data science solution for checking the status of traffic signs for IV-Infra. The problem being addressed was the need to efficiently and accurately map and check the status of traffic signs, such as determining if a sign is in the correct location, if it is rotated too much, or if it is expired. The research question being addressed was, "How can traffic signs be recognized and mapped using a series of photos?"
 
 I was primarily focused on researching and implementing the YOLOv5 object detection model. This involved deep diving into the inner workings of the model, as well as experimenting with various configurations to ensure it was optimally suited for our project. I also spent a significant amount of time researching and implementing various preprocessing techniques for the dataset before it was fed into the model. This allowed me to ensure the best possible results and accuracy of the model. 
 
-Lastly, my colleague Bram and I wrote a python script from scratch to bring all the components of the project together. This script utilized the YOLOv5 object detection model and trigonometric calculations to effectively map the road signs detected by the model. This script was crucial to achieving the final goal of the project, which was to accurately map and check the status of road signs. The process of writing this script required a deep understanding of the YOLOv5 model, trigonometry, and programming skills. It was a challenging but rewarding experience to work on this script and bring the project to fruition
+Lastly, my colleague Bram and I wrote a python script from scratch to bring all the components of the project together. This script utilized the YOLOv5 object detection model and trigonometric calculations to effectively map the traffic signs detected by the model. This script was crucial to achieving the final goal of the project, which was to accurately map and check the status of traffic signs. The process of writing this script required a deep understanding of the YOLOv5 model, trigonometry, and programming skills. It was a challenging but rewarding experience to work on this script and bring the project to fruition
 
 ## <a id="#domain-knowledge-literature-vision"></a>Literature
 In this second project, I leveraged the knowledge and skills I had gained from my previous experiences, particularly in the field of Python programming. I had completed several courses on DataCamp and was well-versed in the language. This allowed me to focus more on understanding the inner workings of the YOLOv5 object detection model and researching ways to optimize its deployment for our specific project. I spent a significant amount of time studying the model and experimenting with different configurations to ensure that it was properly tailored to our needs. Finally, I implemented the model and integrated it into the project. The knowledge and experience I had gained from my prior training in Python programming enabled me to approach this project with confidence and make meaningful contributions to the project's success.
