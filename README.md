@@ -163,8 +163,7 @@ Initially, we made a model for an author by splitting their data into a training
 
 Project vision ...
 
-<img src="automation.gif" alt="drawing" width="600"><br>
-
+![](automation. gif)
 
 [Back to Table of Contents](#table-of-contents)
 # <a id="domain-knowledge"></a>3. Domain Knowledge
