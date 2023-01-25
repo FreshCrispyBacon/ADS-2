@@ -189,7 +189,7 @@ During this project, which spanned over the first six weeks of the minor kick-of
 
 ## <a id="#domain-knowledge-terminology-foodboost"></a>Terminology
 
-Below are some terms and jargon that are explained in further detail
+Below are some terms and jargon that are explained in further detail.
 
 <details><summary>Nutri-Score</summary>
   
@@ -224,7 +224,7 @@ The context of this research project was to develop a data science solution for 
 
 I was primarily focused on researching and implementing the YOLOv5 object detection model. This involved deep diving into the inner workings of the model, as well as experimenting with various configurations to ensure it was optimally suited for our project. I also spent a significant amount of time researching and implementing various preprocessing techniques for the dataset before it was fed into the model. This allowed me to ensure the best possible results and accuracy of the model. 
 
-Lastly, my colleague Bram and I wrote a python script from scratch to bring all the components of the project together. This script utilized the YOLOv5 object detection model and trigonometric calculations to effectively map the traffic signs detected by the model. This script was crucial to achieving the final goal of the project, which was to accurately map and check the status of traffic signs. The process of writing this script required a deep understanding of the YOLOv5 model, trigonometry, and programming skills. It was a challenging but rewarding experience to work on this script and bring the project to fruition
+Lastly, my colleague Bram and I wrote a python script from scratch to bring all the components of the project together. This script utilized the YOLOv5 object detection model and trigonometric calculations to effectively map the traffic signs detected by the model. This script was crucial to achieving the final goal of the project, which was to accurately map and check the status of traffic signs. The process of writing this script required a deep understanding of the YOLOv5 model, trigonometry, and programming skills. It was a challenging but rewarding experience to work on this script and bring the project to fruition.
 
 ## <a id="#domain-knowledge-literature-vision"></a>Literature
 In this second project, I leveraged the knowledge and skills I had gained from my previous experiences, particularly in the field of Python programming. I had completed several courses on DataCamp and was well-versed in the language. This allowed me to focus more on understanding the inner workings of the YOLOv5 object detection model and researching ways to optimize its deployment for our specific project. I spent a significant amount of time studying the model and experimenting with different configurations to ensure that it was properly tailored to our needs. Finally, I implemented the model and integrated it into the project. The knowledge and experience I had gained from my prior training in Python programming enabled me to approach this project with confidence and make meaningful contributions to the project's success.
@@ -283,7 +283,11 @@ In this research project, the IV-Infra dataset was used to aid in the detection 
 
 The NDW dataset, or the National Road Traffic Sign Database, was also used in the research. This dataset contains information on traffic sign characteristics such as type, placement and locations
 
-### Dataset *IV-Infra
+### Dataset NDW
+
+The National Road Traffic Data Portal (NDW) provides access to a vast dataset of every road sign in the Netherlands, which includes information such as the type of sign, its coordinates in both WGS84 and Rijksdriehoeks, the municipality where it is located, whether it is on the left or right side of the road, and a link to a photo of the sign. This dataset was used as the ground truth to validate the location and type of road signs identified by the model. The data was obtained by filtering the NDW dataset to traffic signs in the municipality of Haarlem. The NDW data is publicly accessible via an API, but only a portion of it is required for this research.
+
+### Dataset IV-Infra
 
 The IV-Infra dataset is a dataset that was used in this research project and it contains a series of photographs taken in October 2022 near Haarlem. The series of photos are taken with a resolution of 5120 by 5120 pixels and they represent a complete view of the area. Each photo in the series has a different view, the first photo looks forward, the second photo looks to the front right, the third photo to the rear right, the fourth to the rear left, the fifth photo to the front left, and the sixth photo is taken to the top. The dataset also includes the coordinates at which the photos were taken, the heading, pitch, roll, the date and time when the photos were taken. This dataset provide a detailed view of the area and can be used in conjunction with the trigonometric calculations to triangulate the position of the traffic signs in 3D space and the National Data Warehouse (NDW) database to verify the calculated coordinates of the traffic signs.
 
@@ -318,10 +322,6 @@ Do note these values are final values after several tweaks according to model pe
 <details><summary>Brightness: Between 0% and +80%</summary><img src="brightness.png" alt="drawing" width="400"><br><br></details>
 <details><summary>Shear: ±12° Horizontal, ±4° Vertical</summary><img src="shear.png" alt="drawing" width="400"><br><br><br></details>
 
-### Dataset *NDW
-
-The National Road Traffic Data Portal (NDW) provides access to a vast dataset of every road sign in the Netherlands, which includes information such as the type of sign, its coordinates in both WGS84 and Rijksdriehoeks, the municipality where it is located, whether it is on the left or right side of the road, and a link to a photo of the sign. This dataset was used as the ground truth to validate the location and type of road signs identified by the model. The data was obtained by filtering the NDW dataset to traffic signs in the municipality of Haarlem. The NDW data is publicly accessible via an API, but only a portion of it is required for this research.
-
 
 [Back to Table of Contents](#table-of-contents)
 # 5. <a id="communication"></a>Communication
@@ -331,12 +331,15 @@ The National Road Traffic Data Portal (NDW) provides access to a vast dataset of
 During this minor I have presented x presentations.
 
 Foodboost
-  - 
-  - 
+[Internal presentation: Week 2](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/Eczc6ErKUdVCrda20OWTmQsBRuUva7Q9KIhfXh_3jDr_zQ?e=3jhHW3)
+[Internal presentation: Week 4](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EQgh5mEaSolIo9A_dZAONb0B4EJPXDnj32Vhvfc35AEYDQ?e=POIJYn)
+[Internal presentation: Week 6](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EYqM85L2pMVDh2BDRN4D3ogBsuwJ5KREJzHwfuxnVrA9mw?e=PgTDgJ)
+
 
 Vision
-  -
-  -
+[Internal presentation: Week 10](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/EWl4RZUKnr9Kp-U87WVuKGcBfkoiaxHZwFGctiNuMdPZYQ?e=rURSXh)
+[External presentation: Week 14](https://dehaagsehogeschool-my.sharepoint.com/:p:/g/personal/19065728_student_hhs_nl/Ecod069mrstBo4Ole5smbj4BOz4sPxcYHXGw4k2154lhiw?e=nmCccx)
+External presentation: Week 20 - link will be published 1st February
 
 ## Paper
 
