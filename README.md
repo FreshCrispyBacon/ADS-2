@@ -300,11 +300,6 @@ text
 	* Shear: ±12° Horizontal, ±4° Vertical<br>
 Do note these values are final values after several tweaks according to model performance.</details>
 
-#### The Annotation process
-
-info
-text
-
 #### Data Augmentation
 
 <details><summary>Rotation: Between -5° and +5°</summary><img src="rotation.png" alt="drawing" width="400"><br><br></details>
@@ -315,8 +310,7 @@ text
 
 ### Dataset *NDW
 
-info
-text
+The National Road Traffic Data Portal (NDW) provides access to a vast dataset of every road sign in the Netherlands, which includes information such as the type of sign, its coordinates in both WGS84 and Rijksdriehoeks, the municipality where it is located, whether it is on the left or right side of the road, and a link to a photo of the sign. This dataset was used as the ground truth to validate the location and type of road signs identified by the model. The data was obtained by filtering the NDW dataset to traffic signs in the municipality of Haarlem. The NDW data is publicly accessible via an API, but only a portion of it is required for this research.
 
 
 [Back to Table of Contents](#table-of-contents)
