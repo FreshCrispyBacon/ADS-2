@@ -347,7 +347,7 @@ python code here
 python code here
 ```
 
-### <a id="The Python code below is the A to Z workflow from Image Detection to Map Creation"></a> x
+### <a id="Detect-and-Map"></a>The Python code below is the A to Z workflow from Image Detection to Map Creation
 [Source File](measureAutomateV2.py)
 
 ```py
@@ -765,7 +765,7 @@ print('Total time: ', datetime.now()-now)
 ```
 
 
-### <a id="Split the images into training and validation datasets"></a> x
+### <a id="split-data"></a>Split the images into training and validation datasets
 [Source File](split_data.py)
 
 ```py
@@ -840,7 +840,7 @@ for i in range(split, size):
 print("finished")
 ```
 
-### <a id="Combine all images with YOLOv5 detections into a video"></a> x
+### <a id="make-video"></a>Combine all images with YOLOv5 detections into a video
 [Source File](makeVideo.py)
 
 ```py
