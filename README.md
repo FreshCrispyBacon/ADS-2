@@ -443,6 +443,50 @@ def basic_summary(df):
 basic_summary(recipes)
 ```
 
+### <a id="Nutri-Score-Label"></a>Nutri-Score and Label calculations
+
+```py
+def score(lijst,voedingsstof):
+    i=0
+    while i <len(lijst):
+        if voedingsstof<=lijst[i]:
+            return i
+        else:
+            i+=1
+    return i
+```
+
+```py
+def nutrilabel(score):
+    lijst = [0,3,11,19]
+    labels = ['A','B','C','D','E']
+    i = 0
+    while i<len(lijst):
+        if score<lijst[i]:
+            return labels[i]
+        else:
+            i+=1
+    return labels[i]
+```
+
+```py
+def nutriscore(natrium, verzadigd, vezels, suiker, eiwit, energie):
+    nutri_score = 0
+    voedingsstoffen = [energie,suiker,eiwit,natrium,verzadigd,vezels]
+    
+    for i in range(0,len(voedingsstoffen)):
+        voedingsstoffen[i]=int(''.join(list(filter(str.isdigit, voedingsstoffen[i]))))
+    
+    lijsten = [[80.07, 160.13, 240.20, 320.27, 400.33, 480.40, 560.47, 640.54, 720.60, 800.67],[4.5,9,13.5,18,22.5,27,1,36,40,45],[1.6,3.2,4.8,6.4,8],[90,180,270,360,450,540,630,720,810,900],[1,2,3,4,5,6,7,8,9,10],[0.9,1.9,2.8,3.7,4.7]]
+    
+    for i in range(0,len(voedingsstoffen)):
+        if (i+1)%3==0:
+            nutri_score -= score(lijsten[i],voedingsstoffen[i])
+        else:
+            nutri_score += score(lijsten[i],voedingsstoffen[i])
+    return nutri_score
+```
+
 ### <a id="remove-nulls"></a>Cleaning data by removing recipes with null values and saving the new clean DataFrame
 ```py
 # Recipes with no data besides energy
