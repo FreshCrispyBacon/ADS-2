@@ -357,7 +357,7 @@ Vision
 
 ## Paper
 
-[Source File](ADS Groep 2 - Research paper - Vision.pdf)
+[Source File](ADS%20Groep%202%20-%20Research%20paper%20-%20Vision.pdf)
 
 The paper my group delivered at the end of the ADS Minor targeted the Vision project, as it was the longest project in the minor.
 For the paper I contributed in 7 specific sections, aside from giving feedback on the remaining sections and my teammates' work.
