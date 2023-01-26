@@ -169,7 +169,11 @@ When all photos were annotated, we could give them as input to YOLO. After sever
 
 In the end, we saw that the mAP score was not particularly high. Nevertheless, we noticed that on individual photos the confidence of the model was often above 0.8. IV-Infra only takes two photos per second, which means that the model can still make good predictions in real time. Below we have pasted all the forward-looking photos of IV-Infra one after the other and had the model analyzed over them to recognize all the signs.
 
+ - Example of YOLOv5 detections
 ![](automation-demo.gif)
+
+ - Interactive map with road sign tags, created with our code
+![](interactive-map.gif)
 
 [Back to Table of Contents](#table-of-contents)
 # <a id="domain-knowledge"></a>3. Domain Knowledge
