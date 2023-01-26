@@ -205,13 +205,13 @@ During this project, which spanned over the first six weeks of the minor kick-of
 
 Below are some terms and jargon that are explained in further detail.
 
-<details><summary>Nutri-Score</summary>
+<details><summary>Nutri-Score & Nutri-Label</summary>
   
-  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. "A" being the best, and "E" being the worst. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.</details>
+  The Nutri-Score is a nutrition label that uses a five-color scale (from dark green to red) to classify foods based on their nutritional quality. Best score is the lowest score, -15. The Worst score is the highest score, 40. To make this easier for the general consumer to understand, and to streamline the colour system further, a scale from A to E has been implemented, converting the 5 categories of numerical scores to alphabetical scores: "A" being the best, and "E" being the worst. It takes into account the amount of energy (calories), sugar, saturated fat, sodium, and the presence of fruits, vegetables, nuts, fiber, and protein. Foods with a higher Nutri-Score are considered healthier than those with a lower score. The Nutri-Score label is an easy way for consumers to identify healthier food options at a glance.</details>
   
-<details><summary>Nutri-Label</summary>
+<details><summary>Nutrition label</summary>
   
-  Nutri-label is a similar concept, it is a nutrition label that is used to display the nutritional value of a product. Nutri-label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.</details>
+  Nutrition label usually contains information such as the energy value, the amounts of fat, saturated fat, carbohydrates, sugars, protein and salt per serving. It also includes a reference intake (RI) for an average adult. Nutri-label aims to make it easier for consumers to make informed choices about the food they buy and to help them to achieve a balanced diet.</details>
   
 <details><summary>Recommender System</summary>
   
