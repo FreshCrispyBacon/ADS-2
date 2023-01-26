@@ -160,12 +160,12 @@ We adopted a different approach with the Food.com dataset by converting it into 
 Initially, we made a model for an user by splitting their data into a training and test set and using a Random Forest Classifier with hyperparameter tuning using Optuna to find the best n_estimators, max_depth and min_samples_leaf. We used the accuracy score as a metric and achieved an accuracy of 0.948. However, upon further experimentation, we discovered that the model was predicting that the user liked every recipe, even ones that they had previously disliked. We suspect that this was due to the large size of the binary table and the high number of variables, which led to the model not being able to handle the large number of zeros. In retrospect, we realized that we had not scaled the data, which may have contributed to a better model performance.
 
 - Popularity based on the number of `votes count`<br>
-[](sns-top-recipes-by-count.png)
+<img src="sns-top-recipes-by-count.png">
 
 
-- Due to this being mine, and my group's first time trying out `Machine Learning`, we tried a lot of different things. Below are a few examples.<br>
-<details><summary>Model Tryouts example `1`</summary><img src="model-tryouts-1.png"></details>
-<details><summary>Model Tryouts example `2`</summary><img src="model-tryouts-2.png"></details>
+Due to this being mine, and my group's first time trying out `Machine Learning`, we tried a lot of different things. Below are a few examples.<br>
+<details><summary>Model Tryouts example 1</summary><img src="model-tryouts-1.png"></details>
+<details><summary>Model Tryouts example 2</summary><img src="model-tryouts-2.png"></details>
 
 
 
