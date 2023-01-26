@@ -1,6 +1,6 @@
 # David's Portfolio - Group 2 of ADS
 ### Student: David Kaldor - 20141211
-#### Closely collaborated with Bram
+#### Closely collaborated with fellow student/groupmate Bram Smeets - 19124147
 
 
 # <a id="table-of-contents"></a>Table of Contents <!-- omit in toc -->
