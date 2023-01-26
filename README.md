@@ -49,6 +49,8 @@ For this goal, we set the following research questions:
 ### Future Work
 The main setback I felt we had was the lack of real user data, more specifically, user input data. User input data is considered data we can use where a user has rated a considerable amount of tried recipes. Lacking user data is important for a machine learning model that aims to recommend healthier food options because the model relies on this data to learn about the user's preferences, dietary restrictions, and current eating habits. Without this information, the model would not be able to make personalized or accurate recommendations. Additionally, the model would not be able to track the user's progress and adjust its recommendations accordingly. Without data, the model would not be able to learn from user interactions and feedback, which is crucial for improving the model's performance over time.
 
+<img src="nutri.png"></details>
+
 ### Conclusions
 
 #### 1. How can we predict a healthier diet for someone based on their previous recipes?
