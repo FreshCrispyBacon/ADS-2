@@ -27,7 +27,7 @@
 # <a id="obligatory-criteria"></a>Obligatory Criteria
 ## <a id="datacamp-assignments"></a>Datacamp assignments
 
-- 21 / 01 / 2023 Datacamp progress
+- 26 / 01 / 2023 Datacamp progress
 
   <details><summary>Datacamp progress</summary><img src="Screenshot_20230121_090154.png"></details>
   
@@ -159,17 +159,20 @@ We adopted a different approach with the Food.com dataset by converting it into 
 
 Initially, we made a model for an user by splitting their data into a training and test set and using a Random Forest Classifier with hyperparameter tuning using Optuna to find the best n_estimators, max_depth and min_samples_leaf. We used the accuracy score as a metric and achieved an accuracy of 0.948. However, upon further experimentation, we discovered that the model was predicting that the user liked every recipe, even ones that they had previously disliked. We suspect that this was due to the large size of the binary table and the high number of variables, which led to the model not being able to handle the large number of zeros. In retrospect, we realized that we had not scaled the data, which may have contributed to a better model performance.
 
+- Popularity based on the number of `votes count`<br>
+[](sns-top-recipes-by-count.png)
+
 ## <a id="predictive-models-vision"></a>Project Vision
 
 For this vision project we had to take a different approach. Photos are a completely different way of data than a simple data frame. Through the lectures we quickly realized that we should probably start using Neural Networks. We did a lot of literature research and got tips during the weekly meetings. We tried a number of different ways to recognize road signs in the available photos. We soon came upon OpenCV. Here several options came up like Pattern Matching and Orbs. We have tried to get these ways to work on 1 photo. Both Pattern Matching and Orbs use landmarks. We noticed that few recognition points were created on the road signs. This made it difficult to use these methods for our problem. 
 
-We were advised to use YOLO for image recognition. We then chose to use YOLOv5. A YOLOv7 was also available around that time. We chose YOLOv5 because there was more available documentation for this version. This made it easier to work with. To use YOLO we had to prepare the data ourselves. This meant that we had to annotate all the photos by hand. We have determined the class names via https://www.verkeersbordoverzicht.nl/. We then started annotating the photos of IV-infra via Roboflow. We have chosen to use all photos that look straight ahead and those that are front right. In our estimation, most of the signs are most clearly visible in these photos. This left us with a selection of approximately 7500 photos. Of these, about 2000 photos contain traffic signs. In total we had around 3000 annotated traffic signs divided over 82 classes. This sounds like a lot, but the seven most common classes already made up 1500 of these 3000 annotations.
+We were advised to use YOLO for image recognition. We then chose to use YOLOv5. A YOLOv7 was also available around that time. We chose YOLOv5 because there was more available documentation for this version. This made it easier to work with. To use YOLO we had to prepare the data ourselves. This meant that we had to annotate all the photos by hand. We have determined the class names via `https://www.verkeersbordoverzicht.nl/`. We then started annotating the photos of IV-infra via Roboflow. We have chosen to use all photos that look straight ahead and those that are front right. In our estimation, most of the signs are most clearly visible in these photos. This left us with a selection of approximately 7500 photos. Of these, about 2000 photos contain traffic signs. In total we had around 3000 annotated traffic signs divided over 82 classes. This sounds like a lot, but the seven most common classes already made up 1500 of these 3000 annotations.
 
 When all photos were annotated, we could give them as input to YOLO. After several tries, we found that at 50 epochs the model was neither underfit nor overfit. The model had very selective data as input, which sometimes made it more difficult to recognize signs. Boards that are rare in the data set often caused the most problems. The photos were taken on a cloudy day outside the center of Haarlem. If this model were to be used in other places in the Netherlands, this could cause problems, because there may be signs there that are not included in our model.
 
 In the end, we saw that the mAP score was not particularly high. Nevertheless, we noticed that on individual photos the confidence of the model was often above 0.8. IV-Infra only takes two photos per second, which means that the model can still make good predictions in real time. Below we have pasted all the forward-looking photos of IV-Infra one after the other and had the model analyzed over them to recognize all the signs.
 
- - Example of YOLOv5 detections<br>
+ - Example of `YOLOv5` detections<br>
 ![](automation-demo.gif)
 
  - Interactive map with road sign tags, created with our code
@@ -378,9 +381,61 @@ Al met al biedt deze onderzoek waardevolle inzichten in de mogelijkheden van YOL
 # <a id="codesnippets"></a>Code snippets for contributions 
 ## FoodBoost
 
+### <a id="basic-summary"></a>Using Gini or Entropy with a DecisionTreeClassifier
 ```py
-python code here
+# Training/testing split
+
+X_train, X_test, y_train, y_test = train_test_split(nutrirecept_data, nutrirecept_target, test_size = 0.2, random_state = 111)
+
+# train using gini
+
+clf_gini = DecisionTreeClassifier(criterion = 'gini', random_state = 111, max_depth = 6, min_samples_leaf = 2)
+clf_gini.fit(X_train, y_train)
+
+# train using entropy, comment lines 10-11 and remove comment to test entropy
+# clf_entropy = DecisionTreeClassifier(criterion = "entropy", random_state = 100, max_depth = 3, min_samples_leaf = 5)
+# clf_entropy.fit(X_train, y_train)
+
+# Prediction using gini
+
+y_pred = clf_gini.predict(X_test)
+print('Predicted values: ', y_pred)
+
+# Calculate accuracy
+
+print("Confusion Matrix: ", confusion_matrix(y_test, y_pred))
+print("Accuracy : ", accuracy_score(y_test,y_pred)*100)      
+print("Report : ", classification_report(y_test, y_pred))
 ```
+
+### <a id="basic-summary"></a>This code shows metadata of the given dataset in a simple but organized overview
+```py
+import numpy as np
+import pandas as pd
+import os
+pd.set_option('display.max_columns', None)
+import seaborn as sns
+from collections import defaultdict
+
+def basic_summary(df):
+    print(f"Samples : {df.shape[0]:,} \nColumns : {df.shape[1]} : {list(df.columns)}")
+    print("\nHeads")
+    display(df.head(3))
+    print("\nData types")
+    display(df.dtypes.to_frame(name='dtypes').T)
+    print("\nNull values")
+    display(pd.concat([df.isna().sum(), df.isna().mean() * 100], axis=1, keys=['count', 'pct']).T)
+    print("\nBasic statistics")
+    display(df.describe().T)
+
+basic_summary(recipes)
+```
+
+### <a id="remove-nulls"></a>Cleaning data by removing recipes with null values and saving the new clean DataFrame
+
+
+### <a id="tedious-cleaning"></a>An example of a tedious cleaning code that had to be written
+
 
 ## Vision
 
