@@ -147,8 +147,6 @@ In this project, we initially planned to use Trello as our task management tool 
 I have created multiple predictive models, which I will present and discuss separately for each project.
 ## <a id="predictive-models-foodboost"></a>Project Foodboost
 
-Project foodboost was mainly based around basic machine learning models.
-
 During the Foodboost project, we familiarized ourselves with various models used in data science. These models are trained on basic data and require a set of variables and an objective function to make predictions on new data. There are different models available in the data science world which can be divided into two categories: continuous and discrete models. Continuous models provide a predicted numerical outcome, while discrete models, also known as categorical models, give a specific category as the result. For example, predicting the healthiness of a dish would utilize a discrete model. Some well-known continuous models include Linear Regression, Polynomial Regression, Ridge, and Lasso. Some examples of discrete models include Logistic Regression, Decision Tree, Support Vector Machines, Random Forest Classifier, and K-Nearest Neighbor.
 
 We experimented with these models to understand the type of inputs they expect and the outputs they provide. We also became familiar with various metrics to evaluate the performance of the models, such as accuracy, precision, and recall.
@@ -163,6 +161,13 @@ Initially, we made a model for an user by splitting their data into a training a
 
 - Popularity based on the number of `votes count`<br>
 [](sns-top-recipes-by-count.png)
+
+
+- Due to this being mine, and my group's first time trying out `Machine Learning`, we tried a lot of different things. Below are a few examples.<br>
+[](model-tryouts-1.png)<br>
+[](model-tryouts-1.png)
+
+
 
 ## <a id="predictive-models-vision"></a>Project Vision
 
@@ -351,6 +356,8 @@ Vision
 - External presentation: Week 20 - link will be published 1st February
 
 ## Paper
+
+[Source File](ADS Groep 2 - Research paper - Vision.pdf)
 
 The paper my group delivered at the end of the ADS Minor targeted the Vision project, as it was the longest project in the minor.
 For the paper I contributed in 7 specific sections, aside from giving feedback on the remaining sections and my teammates' work.
