@@ -281,7 +281,7 @@ Unfortunately, this proved to be more challenging than anticipated and our final
 
 In this research project, the IV-Infra dataset was used to aid in the detection and mapping of traffic signs. The dataset contains a series of photographs taken in October 2022 near Haarlem with a resolution of 5120 by 5120 pixels, which provides a complete view of the area. The dataset also includes information such as the coordinates, heading, pitch, roll, and the date and time when the photographs were taken. Additionally, IV-Infra also supplied LiDAR data, which is a technology that uses laser beams to measure distances and can create a detailed 3D map of an area.
 
-The NDW dataset, or the National Road Traffic Sign Database, was also used in the research. This dataset contains information on traffic sign characteristics such as type, placement and locations
+The NDW dataset, or the National Road Traffic Sign Database, was also used in the research. This dataset contains information on traffic sign characteristics such as type, placement and locations.
 
 ### Dataset NDW
 
