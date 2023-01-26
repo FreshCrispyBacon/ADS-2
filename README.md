@@ -249,7 +249,7 @@ In this second project, I leveraged the knowledge and skills I had gained from m
 * [Detecting objects with YOLOv5, OpenCV, Python and C++](https://medium.com/mlearning-ai/detecting-objects-with-yolov5-opencv-python-and-c-c7cf13d1483c)
 * [Training YOLOv5 custom dataset](https://medium.com/mlearning-ai/training-yolov5-custom-dataset-with-ease-e4f6272148ad)
 * [What is YOLO algorithm? | Deep Learning (Tensorflow, Keras & Python)](https://www.youtube.com/watch?v=ag3DLKsl2vk)
-* [Object Tracking and Geo-localization from Street Images](https://arxiv.org/pdf/2107.06257.pdf)
+* [Object Tracking and Geo-localization from Street Images - Source on YOLO alternative](https://arxiv.org/pdf/2107.06257.pdf)
 
 ## <a id="#domain-knowledge-terminology-vision"></a>Terminology
 
