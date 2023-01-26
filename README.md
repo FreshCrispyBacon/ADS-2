@@ -10,7 +10,7 @@
   - [Foodboost](#the-project-foodboost)
   - [Vision](#the-project-vision)
 - [2. Predictive Analytics](#predictive-models)
-  - [Foodboost (Decision Tree Classifier)](#predictive-models-foodboost)
+  - [Foodboost (Nutri-label/score)](#predictive-models-foodboost)
   - [Vision (YOLOv5)](#predictive-models-vision)
 - [3. Domain Knowledge](#domain-knowledge)
   - [Foodboost](#domain-foodboost) 
