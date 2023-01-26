@@ -277,7 +277,7 @@ The first dataset is called `"Allerhande"` and is a recipe repository from Alber
 
 The second dataset is called `"Food.com"` and is available on Kaggle.com. This dataset includes recipes and reviews, which provided us with a larger dataset to work with and a means to validate their results. Our objective was to predict, based on ingredients and labels, whether a user would also enjoy a different recipe. We aimed to develop a recommendation system that gradually introduces healthier options. 
 
-### Dataset `Allerhande`
+### Dataset Allerhande
 
 For the Foodboost project, data was obtained from `Albert Heijn's` recipe repository, which includes information on ingredients, nutritional values, and labels. The nutritional values were of particular importance for calculating the Nutri score and associated label. The `CSV files` were loaded into the `Pandas library` for data analysis.
 We conducted further research on the Nutri score and the factors that contribute to its calculation, including energy, sugar, saturated fatty acids, sodium, fiber, and protein. Using `Jupyter`, we linked multiple datasets to facilitate searching and utilized libraries such as `Pandas` and `NumPy` for data manipulation. We also employed visualization techniques using `Matplotlib` to better understand the data.
@@ -285,7 +285,7 @@ Cleaning of the data was performed by removing duplicate values and rows with mi
 We each experimented with different models to predict whether a recipe would be considered healthy (Nutri label A or B) or unhealthy (Nutri label C, D, or E) based on its ingredients. Through this process, we gained an understanding of the various models available, their input and output requirements, and the importance of providing appropriate data to avoid inaccurate results. I had found `Decision Tree Classifier` to be suitable for our goal.
 In an attempt to predict which recipes a user would prefer based on their previous choices, we encountered a limitation with the available data as it did not include any user information. As a result, we were unable to validate our predictions and ultimately determined that the Albert Heijn dataset was insufficient for our research objectives. We subsequently sought additional data to continue our investigation.
 
-### Dataset `Food.com`
+### Dataset Food.com
 
 During our research, we discovered the popular `Food.com` dataset available on `Kaggle.com`, which not only included recipes but also reviews. This provided us with a larger dataset to work with and a means to validate our results. We imported these datasets to the server and began our analysis.
 Our objective was to predict, based on ingredients and labels, whether a user would also enjoy a different recipe. With this information, we aimed to develop a recommendation system that gradually introduces healthier options. To accomplish this, we created a `binary table,` which included columns for all ingredients and labels and filled in a "1" if a recipe contained an ingredient or label and "0" if it did not. The large number of recipes resulted in a `data frame with over 750 million data points`, causing some `performance issues`. However, it enabled us to make predictions by referencing a user's previously liked recipes (rated 4 or 5 stars) and suggesting new recipes that the model predicts they would also enjoy.
@@ -297,17 +297,17 @@ In this research project, the `IV-Infra` dataset was used to aid in the detectio
 
 The NDW dataset, or the National Road Traffic Sign Database, was also used in the research. This dataset contains information on traffic sign characteristics such as type, placement and locations.
 
-### Dataset `NDW`
+### Dataset NDW
 
 The National Road Traffic Data Portal (NDW) provides access to a vast dataset of every road sign in the Netherlands, which includes information such as the type of sign, its coordinates in both `WGS84` and `Rijksdriehoeks`, the municipality where it is located, whether it is on the left or right side of the road, and a link to a photo of the sign. This dataset was used as the ground truth to validate the location and type of road signs identified by the model. The data was obtained by filtering the NDW dataset to traffic signs in the municipality of Haarlem. The NDW data is publicly accessible via an `API`, but only a portion of it is required for this research.
 
-### Dataset `IV-Infra`
+### Dataset IV-Infra
 
 The IV-Infra dataset is a dataset that was used in this research project and it contains a series of photographs taken in October 2022 near Haarlem. The series of photos are taken with a resolution of 5120 by 5120 pixels and they represent a complete view of the area. Each photo in the series has a different view, the first photo looks `forward`, the second photo looks to the `front right`, the third photo to the `rear right`, the fourth to the `rear left`, the fifth photo to the `front left`, and the sixth photo is facing the `sky`. The dataset also includes the coordinates at which the photos were taken, the heading, pitch, roll, the date and time when the photos were taken. This dataset provide a detailed view of the area and can be used in conjunction with the trigonometric calculations to triangulate the position of the traffic signs in 3D space and the National Data Warehouse (NDW) database to verify the calculated coordinates of the traffic signs.
 
 In addition to the photographs, IV-Infra also supplied LiDAR data that can be used in the research. LiDAR data is a technology that uses laser beams to measure distances and can be used to create a detailed 3D map of an area. This LiDAR data could be used to supplement the photographs in the research to create a more detailed and accurate representation of the area being studied.
 
-#### The 6 Steps `Bram and I` Followed to Preprocess Data in Object Detection
+#### The 6 Steps Bram and I Followed to Preprocess Data in Object Detection
 
 `Data acquisition:` The first step is to acquire the data that will be used to train and test the YOLOv5 model. This was done by by navigating Jupyter Notebook's server files with the terminal feature to acquire the data provided by IV-Infra objects that need to be detected.
 
