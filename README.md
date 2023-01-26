@@ -164,8 +164,8 @@ Initially, we made a model for an user by splitting their data into a training a
 
 
 - Due to this being mine, and my group's first time trying out `Machine Learning`, we tried a lot of different things. Below are a few examples.<br>
-[](model-tryouts-1.png)<br>
-[](model-tryouts-1.png)
+<details><summary>Model Tryouts example `1`</summary><img src="model-tryouts-1.png"></details>
+<details><summary>Model Tryouts example `2`</summary><img src="model-tryouts-2.png"></details>
 
 
 
