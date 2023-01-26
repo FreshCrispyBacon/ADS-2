@@ -22,6 +22,8 @@
   - [Presentations](#presentations)
   - [Paper](#paper)
 - [6. Codesnippets](#codesnippets)
+  - [Foodboost](#code-foodboost)
+  - [Vision](#code-vision)
 ---
 
 # <a id="obligatory-criteria"></a>Obligatory Criteria
@@ -379,7 +381,7 @@ Met behulp van trigonometrische berekeningen kon het onderzoek de gedetecteerde 
 Al met al biedt deze onderzoek waardevolle inzichten in de mogelijkheden van YOLOv5 en zijn potentieel als hulpmiddel voor het in kaart brengen van verkeersborden, en het onderzoek zou kunnen worden uitgebreid om de robuustheid en nauwkeurigheid van YOLOv5 in verschillende scenario's te onderzoeken, zoals verschillende weersomstandigheden, verlichting en weg kwaliteit. De in deze onderzoek voorgestelde methoden kunnen als referentie dienen voor toekomstig onderzoek en ontwikkeling op het gebied van verkeersbordherkenning en -kartering. Het gebruik van Machine Learning en Neural Networks, en tools voor datavisualisatie hebben bewezen effectief te zijn voor het herkennen en in kaart brengen van verkeersborden, en voor het waarborgen van de veiligheid en efficiëntie van transportsystemen. Dit onderzoek draagt bij aan de voortdurende inspanningen om de veiligheid en efficiëntie van transportsystemen te verbeteren en kan worden toegepast in real-world toepassingen zoals autonome voertuigen en intelligente transportsystemen.</details>
 
 # <a id="codesnippets"></a>Code snippets for contributions 
-## FoodBoost
+## <a id="code-foodboost"></a>Project Foodboost
 
 ### <a id="basic-summary"></a>Using Gini or Entropy with a DecisionTreeClassifier
 ```py
@@ -432,12 +434,71 @@ basic_summary(recipes)
 ```
 
 ### <a id="remove-nulls"></a>Cleaning data by removing recipes with null values and saving the new clean DataFrame
+```py
+# Recipes with no data besides energy
+missing_all = nutrirecept2.loc[(nutrirecept2['vezels'] == '0 ') & 
+                      (nutrirecept2['natrium'] == '0 ') & 
+                      (nutrirecept2['waarvan suikers'] == '0 ') & 
+                      (nutrirecept2['eiwit'] == '0 ') &
+                      (nutrirecept2['waarvan verzadigd'] == '0 ')]
 
+# Recipes missing vezels
+missing_vezels = nutrirecept2.loc[(nutrirecept2['vezels'] == '0 ') & 
+                      (nutrirecept2['natrium'] != '0 ') & 
+                      (nutrirecept2['waarvan suikers'] != '0 ') & 
+                      (nutrirecept2['eiwit'] != '0 ') &
+                      (nutrirecept2['waarvan verzadigd'] != '0 ')]
+
+# Recipes missing natrium
+missing_natrium = nutrirecept2.loc[(nutrirecept2['vezels'] != '0 ') & 
+                      (nutrirecept2['natrium'] == '0 ') & 
+                      (nutrirecept2['waarvan suikers'] != '0 ') & 
+                      (nutrirecept2['eiwit'] != '0 ') &
+                      (nutrirecept2['waarvan verzadigd'] != '0 ')]
+
+# Recipes missing suikers
+missing_suikers = nutrirecept2.loc[(nutrirecept2['vezels'] != '0 ') & 
+                      (nutrirecept2['natrium'] != '0 ') & 
+                      (nutrirecept2['waarvan suikers'] == '0 ') & 
+                      (nutrirecept2['eiwit'] != '0 ') &
+                      (nutrirecept2['waarvan verzadigd'] != '0 ')]
+
+# Recipes missing eiwit
+missing_eiwit = nutrirecept2.loc[(nutrirecept2['vezels'] != '0 ') & 
+                      (nutrirecept2['natrium'] != '0 ') & 
+                      (nutrirecept2['waarvan suikers'] != '0 ') & 
+                      (nutrirecept2['eiwit'] == '0 ') &
+                      (nutrirecept2['waarvan verzadigd'] != '0 ')]
+
+# Recipes missing verzadigd vet
+missing_verzadigdvet = nutrirecept2.loc[(nutrirecept2['vezels'] != '0 ') & 
+                      (nutrirecept2['natrium'] != '0 ') & 
+                      (nutrirecept2['waarvan suikers'] != '0 ') & 
+                      (nutrirecept2['eiwit'] != '0 ') &
+                      (nutrirecept2['waarvan verzadigd'] == '0 ')]
+
+concat_test = [missing_eiwit, missing_natrium, missing_suikers, missing_verzadigdvet, missing_vezels]
+concat_result = pd.concat(concat_test)
+
+concat_result=concat_result.reset_index(drop=True)
+print(concat_result.index)
+concat_result.drop('Unnamed: 0', axis=1, inplace=True)
+concat_result.to_csv('clean_table')
+concat_result
+```
 
 ### <a id="tedious-cleaning"></a>An example of a tedious cleaning code that had to be written
+```py
+res = recipestop['Keywords'].tolist()
+for x in range(len(res)):
+    res[x] = str(res[x])
+    res[x] = res[x].strip("c(")
+    res[x] = res[x].strip(")")
+    res[x] = res[x].replace('"',"")
+    res[x] = res[x].split(', ')
+```
 
-
-## Vision
+## <a id="code-vision"></a>Project Vision
 
 ### <a id="Detect-and-Map"></a>The Python code below is the A to Z workflow from Image Detection to Map Creation
 [Source File](measureAutomateV2.py)
